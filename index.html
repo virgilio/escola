@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Mupi Escola!</title>
+
+    <!-- Le meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mupi! Aprenda com experiências reais!">
+    <meta name="author" content="Matchbox Ideas">
+
+    <meta property="og:title" content="Mupi Escola!" />
+    <meta property="og:image" content="http://mupi.me/assets/img/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://escola.mupi.me/#participe" />
+        
+    <!-- Le scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Le styles -->
+    <link href="http://mupi.me/assets/stylesheets/main.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://mupi.me/assets/stylesheets/font-awesome.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="http://mupi.me/assets/img/favicon.ico">
+    <link href="http://mupi.me/assets/stylesheets/mupiMain.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300" rel='stylesheet' type='text/css'>
+    <link href="http://mupi.me/assets/stylesheets/jasny-bootstrap.css" rel="stylesheet" type="text/css" media="screen"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      
+      _gaq.push(
+      ['_setAccount', 'UA-35125468-1']
+      // DEV -
+      , ['_setDomainName', 'none']
+      // PROD
+          // , ['_setDomainName', 'mupi.me']
+      , ['_trackPageview']
+      , ['_setCustomVar', 1, 'logged-in' , 'false', 2]
+      , ['_setCustomVar', 2, 'member'    , 'false', 1]
+      , ['_setCustomVar', 3, 'cohort'    , '0', 1]
+      , ['_setCustomVar', 4, 'email'     , '0', 1]
+      );
+      
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      // DEV
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/u/ga_debug.js';
+      // PROD
+      // ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/u/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script src="http://mupi.me/assets/javascripts/cohorts.js"></script>
+    <link href="http://mupi.me/assets/stylesheets/notLogged_header.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://mupi.me/assets/stylesheets/about.css" type="text/css" media="screen"/>
+    <style type="text/css">
+      .profiles {
+      height: 450px;
+      }
+      .profiles .btn {
+      height: 430px;
+      margin: 0 5px 0 0;
+      }
+      .mupi-navbar {
+      height: 70px;
+      }
+      .not_logged_header .menu{
+      line-height: 70px;
+      }
+      #content {
+      padding-top: 70px;
+      }
+      .logo {
+      margin-top: 20px;
+      }
+      .field{
+      float: left;
+      }
+      .not_logged_header #login_box .input, .not_logged_header .participe {
+      text-align: left;
+      line-height: auto;
+      float: left;
+      }
+
+      .not_logged_header .participe a{
+      padding: 0;
+      }
+      
+      .btn-facebook {
+      color: #ffffff;
+      background-color: #3b5998;
+      background-repeat: repeat-x;
+      background-image: -khtml-gradient(linear, left top, left bottom, from(#627aad), to(#3b5998));
+      background-image: -moz-linear-gradient(top, #627aad, #3b5998);
+      background-image: -ms-linear-gradient(top, #627aad, #3b5998);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #627aad), color-stop(100%, #3b5998));
+      background-image: -webkit-linear-gradient(top, #627aad, #3b5998);
+      background-image: -o-linear-gradient(top, #627aad, #3b5998);
+      background-image: linear-gradient(top, #627aad, #3b5998);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#627aad', endColorstr='#3b5998', GradientType=0);
+      border-color: #3b5998 #3b5998 #263961;
+      border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+      text-shadow: none !important;
+      }
+      
+      .btn-facebook:hover {
+      background-position: 0px 30px;
+      background-image: none;
+      color: #333;
+      text-decoration: none;
+      }
+
+      .social li{
+      height: 32px;
+      width: 32px;
+      overflow: hidden;
+      }
+      
+      .fb, .ln, .tw {
+      background-image: url('img/social.png');
+      width: 32px;
+      height: 32px;
+      display: block;
+      }
+      
+      .fb {
+      background-position: 0 65px;
+      }
+      .ln {
+      background-position: 0 97px;
+      }
+      .tw {
+      background-position: 0 196px;
+      }
+      
+      .fb:hover {
+      background-position: 0 33px;
+      }
+      .ln:hover {
+      background-position: 0 130px;
+      }
+      .tw:hover {
+      background-position: 0 163px;
+      }
+      
+      #messages {
+      display: none;
+      }
+    </style>
+    <script type="text/javascript">
+      jQuery(function(){
+        var hash = window.location.hash;
+        if(hash)
+          jQuery('html, body').animate({ scrollTop: $(hash).offset().top - 70 }, 300);
+      
+        jQuery(".menu a, .participe a").click(function(e){
+          jQuery('html, body').animate({ scrollTop: $(this.hash).offset().top - 70 }, 300);
+        });
+
+        jQuery('.popup').click(function(event) {
+          event.preventDefault();
+          var width  = 575,
+          height = 400,
+          left   = ($(window).width()  - width)  / 2,
+          top    = ($(window).height() - height) / 2,
+          url    = this.href + '&url=' + encodeURI(window.location),
+          opts   = 'status=1' +
+          ',width='  + width  +
+          ',height=' + height +
+          ',top='    + top    +
+          ',left='   + left;
+          window.open(url, 'twitter', opts);
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a class="" href="http://mupi.me" alt="Mupi"><div id="version_tag"></div></a>
+    <div class="wrapper">
+      <div class="navbar mupi-navbar navbar-fixed-top not_logged_header">
+        <div class="page_container">
+          <div class="span6 participe">
+            <h4 style="line-height: 70px; margin: 0;"><a href="#participe">Quer Participar?</a></h4>
+          </div>
+          <div class="span6 menu">            
+            <a style="border-right: 1px solid white;" href="#escola">Nossa Escola!</a>
+            <a href="#sobre">Quem Somos</a>
+            <a class="logo" href="#participe" alt="Mupi"></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">              
+        <div id="escola" class="about_container page_container clearfix" style="padding-bottom: 30px;">
+          <div class="logo_about span4">
+            <img src="http://mupi.me/assets/img/logo.png" />
+          </div>
+          <div class="span8">
+            <div class="escola span8">
+              <h3>Sobre a Escola Mupi</h3>
+              <p>Na escola mupi, unimos nossas duas maiores paixões: tecnologia e educação. 
+                criamos uma escla de tecnologia que pode ser acessada de
+                qualquer lugar com cursos de desenvolvimento web que te colocam em contato com experiências de trabalho reais! 
+                E o melhor, 100% em português  =) </p>
+              <p>Um dos nossos maiores objetivos é promover educação de qualidade acessível a todos.</p>
+            </div>
+            <div class="planos span8">
+              <h4>oferecemos dois tipos de plano de acordo com a sua necessidade:</h4>
+              <ul class="span8">
+                <li class="btn span3">
+                  <h4>Silver</h4> 
+                  <p>
+                    <span class="label label-success">R$ 40,00</span> 
+                    nesse plano você tem acesso a todo o conteúdo do site, incluindo videoaulas, exercícios e projetos</p>
+                </li>
+                <li class="btn btn-warning span3">
+                  <h4>Gold</h4> 
+                  <p>
+                    <span class="label label-success">R$ 80,00</span>
+                    além do conteúdo oferecido no plano acima, oferecemos suporte pedagógico individual </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="participe" class="div_about">          
+          <div class="page_container">
+            <div class="span5">
+              <h3>Como fazer parte!</h3>
+              <p class="lead">Para participar, basta preencher o formulário abaixo com seu nome e e-mail.</p>
+              <p>e receba novidades sobre o lançamento!</p>
+              <div class="row">
+                <div class="span3" id="login_box">
+                  <form id="subscribe" action="subscribe.php" method="POST">
+                    <div class="clearfix">
+                      <div class="input-prepend">
+                        <span class="add-on"><i class="icon-white icon-user"></i></span>
+                        <input  type="text" id="name" name="name" placeholder="Seu nome" value="">
+                      </div>
+                    </div>
+                    <div class="clearfix">
+                      <div class="input-prepend">
+                        <span class="add-on"><i class="icon-white icon-envelope"></i></span>
+                        <input type="text" id="email" name="email" placeholder="Seu e-mail" value="">
+                      </div>
+                    </div>
+                    <input type="submit" value="Paricipar!" class="btn btn-large">    
+                  </form>
+		  <div id="messages" class="img-rounded">
+		    
+		  </div>
+		</div>
+              </div>
+            </div>
+            <div class="span7">
+              <h4>Ajude a divulgar o Mupi e as idéias que compartilhamos!</h4>
+              <p>A Escola Mupi faz parte de uma iniciativa que vem tomando grande espaço no mundo inteiro 
+                sobre a importância da programação no currículo pessoal.</p> 
+              <p>Um grande movimento vem se formando nos EUA em 
+                prol da adição de programação no currículo escolar! Confira em 
+                <a href="http://code.org" class="label label-info">code.org</a>
+
+              <p class="lead">Divulge a Escola Mupi</p>
+              <a class="btn btn-facebook btn-large" 
+                 href="https://www.facebook.com/sharer.php?u=http://escola.mupi.me" 
+                 target="_blank">
+                Compartilhe no Facebook 
+                <i class="icon-white icon-thumbs-up"></i>
+              </a>
+              <span>ou</span>
+              <a href="https://twitter.com/share?text=Conheça a Escola Mupi!" 
+		 target="_blank" class="popup btn btn-default btn-large" data-lang="en">
+                Através do Twiter
+                <i class="icon-white" 
+                   style="background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="sobre" class="about_container page_container">
+          <div class="span3">
+            <h3>Quem somos</h3>
+            <p>Uma equipe que acredita no aprendizado coletivo!</p>
+            <p>Nosso time é formado por ex-alunos da Unicamp, de diferentes áreas, que foram unidos pela vontade de trazer 
+              novas ideias para mudar e melhorar os usos da tecnologia no campo da educação.</p>
+            <p>Temos uma garagem com mesa, cadeiras, lousa e wifi pronta para receber encontros de gente 
+              interessante que quer ensinar e aprender. Basta falar conosco!</p>
+            <p>
+              <i class="icon-envelope"></i> contato @ mupi . me
+            </p>
+          </div>
+          <div class="span9 profiles">
+            <div class="btn span2">
+              <div class="profile_img">
+                <img src="http://mupi.me/assets/img/ana.jpg" />
+              </div>
+              
+              <h5>Ana Rute Mendes</h5>
+              <p>Formada em midialogia pela Unicamp, sou apaixonada pela web e tudo que ela pode proporcionar. Acredito no Mupi como uma forma de unir pessoas aravés da troca de conhecimento.</p>
+            </div>
+            <div class="btn span2">
+              <div class="profile_img">
+                <img src="http://mupi.me/assets/img/banduk.jpg" />
+              </div>
+              <h5>Mauricio Banduk</h5>
+              <p>Engenheiro de Computação, apaixonado por web e todas as tecnologias ligadas à ela. Colaboração, novidade e experiência são palavras que o guiam para o desenvolvimento.</p>
+            </div>
+            <div class="btn span2">
+              <div class="profile_img">
+                <img src="http://mupi.me/assets/img/paulets.jpg" />
+              </div>
+              <h5>Paula Furtado</h5>
+              <p>Formada em Letras, pesquisadora em educação e tecnologia. Louca por literatura, música popular brasileira, internet e pessoas movidas pela paixão de acrescentar algo no mundo!</p>
+            </div>
+            <div class="btn span2">
+              <div class="profile_img">
+                <img src="http://mupi.me/assets/img/vir.jpg" />
+              </div>
+              <h5>Virgilio Santos</h5>
+              <p>Formado em Computação pela Unicamp e desenvolvedor de software. Tenho um interesse muito grande por Tecnologia e Educação e estou sempre envolvido em projetos nessa área, como o Mupi!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer role="contentinfo" class="navbar">
+      <div class="page_container">
+        <div class="contact span3">
+          <div class="phone">
+            <a href="tel:+551932893914">
+              <i class="icon-phone "></i> +55 (19)32893914
+            </a>
+          </div>
+        </div>
+        <div class="mail span4">
+            contato@mupi.me
+        </div>           
+        <div class="social span2 offset2">
+          <ul class="social inline">
+            <li><a href="http://www.facebook.com/mupi.br" target="_blank" title="facebook" class="fb"></a></li>
+            <li><a href="http://www.linkedin.com/company/mupi" target="_blank" title="linkedin" class="ln"></a></li>
+            <li><a href="https://twitter.com/mbideas" target="_blank" title="twitter" class="tw"></a></li>
+          </ul>                            
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
