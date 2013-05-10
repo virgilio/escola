@@ -1,0 +1,174 @@
+ body{
+  background: url('../img/first_aid_kit.png') 0 0 repeat !important;
+ }
+ h2,h3, h4{
+  font-family: 'Bitter', serif;
+ }
+ .plans{
+  list-style: none;
+  border-bottom: 1px #323 dashed;
+  margin: 0 0 30px 0;
+  padding-bottom: 15px;
+}
+.plan{
+  padding: 0px 10px;
+  margin: 0 10px;
+  background: rgba(250, 250, 250, 0.5);
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.plan i{
+  font-size: 20px;
+  background: none;
+}
+.plan ul{
+  list-style: none;
+}
+.plan ul li{
+  line-height: 2em;
+  font-size: 1.2em;
+}
+.plan form{
+  text-align: center;
+}
+.plan .badges-logos li{
+  line-height: 5em;
+  margin: 0 5px;
+}
+.profiles {
+  height: 450px;
+}
+.profiles .btn {
+  height: 430px;
+  margin: 0 5px 0 0;
+}
+
+.mupi-navbar {
+  height: 70px;
+}
+.not_logged_header .menu{
+  line-height: 70px;
+}
+#content {
+  padding-top: 70px;
+}
+.logo {
+  margin-top: 20px;
+}
+.logo_about{
+  height: auto;
+  margin: 25px auto;
+}
+
+.escola{
+  margin-top: 30px;
+  text-align: justify;
+}
+
+#participe{
+  padding: 30px 0;
+  height: auto;
+}
+
+.field{
+  float: left;
+}
+.not_logged_header .input, .not_logged_header .participe, .tel {
+  text-align: center;
+  line-height: 70px;
+}
+#subscribe{
+  text-align: center;
+}
+
+.tel a:hover{
+  color:  #F16623;
+}
+
+.not_logged_header .participe a{
+ padding: 0;
+}
+
+.btn-facebook {
+  color: #ffffff;
+  background-color: #3b5998;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#627aad), to(#3b5998));
+  background-image: -moz-linear-gradient(top, #627aad, #3b5998);
+  background-image: -ms-linear-gradient(top, #627aad, #3b5998);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #627aad), color-stop(100%, #3b5998));
+  background-image: -webkit-linear-gradient(top, #627aad, #3b5998);
+  background-image: -o-linear-gradient(top, #627aad, #3b5998);
+  background-image: linear-gradient(top, #627aad, #3b5998);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#627aad', endColorstr='#3b5998', GradientType=0);
+  border-color: #3b5998 #3b5998 #263961;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  text-shadow: none !important;
+}
+
+.btn-facebook:hover {
+  background-position: 0px 30px;
+  background-image: none;
+  color: #333;
+  text-decoration: none;
+}
+.social{
+  text-align: center;
+}
+.social li{
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+}
+
+.fb, .ln, .tw {
+  background-image: url('img/social.png');
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.fb {
+  background-position: 0 65px;
+}
+.ln {
+  background-position: 0 97px;
+}
+.tw {
+  background-position: 0 196px;
+}
+.fb:hover {
+  background-position: 0 33px;
+}
+.ln:hover {
+  background-position: 0 130px;
+}
+.tw:hover {
+  background-position: 0 163px;
+}
+
+.btn i{
+  vertical-align: top;
+}
+.btn-large {
+  padding: 5px 12px;
+  font-size: 0.9em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.share-buttons{
+  text-align:center;
+}
+.price{
+  text-align: center;
+  font-weight: bold;
+}
+
+.crowdcrowding{
+  background-color: rgba(256,256,256,0.4);
+  padding: 10px;
+}
+.plan a{
+  text-align: center;
+}
