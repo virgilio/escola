@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <title>Mupi Escola!</title>
@@ -12,7 +12,8 @@
     <meta property="og:title" content="Mupi Escola!" />
     <meta property="og:image" content="http://escola.mupi.me/img/imagine.jpg" />
     <meta property="og:description" content="Uma escola online com foco em tecnologia em Português!" />
-    <meta property="og:image" content="img/logo.png" />
+    <meta property="og:image" content="http://mupi.me/assets/img/logo.png" />
+    <meta property="og:image" content="http://escola.mupi.me/img/logo.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://escola.mupi.me/#participe" />
         
@@ -24,10 +25,12 @@
     <!-- Le styles -->
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="http://mupi.me/assets/img/favicon.ico">
     <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300" rel='stylesheet' type='text/css'>
-    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+    <!-- <link href="http://mupi.me/assets/stylesheets/jasny-bootstrap.css" rel="stylesheet" type="text/css" media="screen"/> -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    
     <!--[if lt IE 7]>
       <link href="css/font-awesome-ie7.min.css" rel="stylesheet">
     <![endif]-->
@@ -61,20 +64,46 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-  
     <script src="http://mupi.me/assets/javascripts/cohorts.js"></script>
+    <link href="http://mupi.me/assets/stylesheets/notLogged_header.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://mupi.me/assets/stylesheets/about.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="css/escola.css" type="text/css" media="screen"/>
-  
+
+    <script type="text/javascript">
+      jQuery(function(){
+        var hash = window.location.hash;
+        if(hash)
+          jQuery('html, body').animate({ scrollTop: $(hash).offset().top - 70 }, 300);
+      
+        jQuery(".menu a, .participe a").click(function(e){
+          jQuery('html, body').animate({ scrollTop: $(this.hash).offset().top - 70 }, 300);
+        });
+
+        jQuery('.popup').click(function(event) {
+          event.preventDefault();
+          var width  = 575,
+          height = 400,
+          left   = ($(window).width()  - width)  / 2,
+          top    = ($(window).height() - height) / 2,
+          url    = this.href + '&url=' + encodeURI(window.location),
+          opts   = 'status=1' +
+          ',width='  + width  +
+          ',height=' + height +
+          ',top='    + top    +
+          ',left='   + left;
+          window.open(url, 'twitter', opts);
+          return false;
+        });
+      });
+    </script>
   </head>
-
-
   <body>
     <a class="" href="http://mupi.me" alt="Mupi"><div id="version_tag"></div></a>
     <div class="wrapper">
       <div class="navbar mupi-navbar navbar-fixed-top not_logged_header">
         <div class="page_container row">
           <div class="span2 participe">
-            <h4><a href="#participe">Inscrição</a></h4>
+            <h4 style="line-height: 70px; margin: 0;"><a href="#participe">Inscrição</a></h4>
           </div>
 
           <div class="tel span5">
@@ -96,7 +125,7 @@
       <div id="content">              
         <div id="escola" class="about_container page_container clearfix" style="padding-bottom: 30px;">
           <div class="logo_about span4">
-            <img src="img/logo.png" />
+            <img src="http://mupi.me/assets/img/logo.png" />
           </div>
           <div class="span8">
             <div class="escola span8">
@@ -114,49 +143,21 @@
           <div class="page_container clearfix">
             <div class="span7">
               <ul class="plans clearfix">
-                <li class="plan">
-                  <h2>Faça nosso curso de Web Design!</h2>
-                  <ul>
-                    <li>
-                      <i class="icon-ok"></i> Aprenda a desenvolver websites com projetos reais
-                    </li>
-                    <li>
-                      <i class="icon-ok"></i> Complemente sua formação com conhecimentos alinhados ao mercado
-                    </li>
-                    <li>
-                      <i class="icon-ok"></i> Aprimore seu portfolio com os projetos realizados durante o curso
-                    </li>
-                  </ul>
-                  <ul class="clearfix badges-logos">
-                    <h5>Você vai aprender:</h5>
-                    <li class="pull-left">
-                      <a href="http://www.w3.org/html/logo/" target="blank">
-                      <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
-                      </a>
-                    </li>
-                    <li class="pull-left">
-                      <a href="http://jquery.org" target="blank">
-                        <img src="img/jquery.png" alt="JQuery" title="Jquery">
-                      </a>
-                    </li>
-                    <li class="pull-left">
-                      <a href="https://github.com/" target="blank">
-                        <img src="img/github.png" alt="GitHub" title="GitHub">
-                      </a>
-                    </li>
-                  </ul>
+                <li class="span7 plan">
+                  <h4>Curso de Web Design para iniciantes</h4>
+                  
                 </li>
               </ul>
               
             </div>
-            <div class="span5">
+            <div id="subscribe" class="span5">
               <div class="crowdcrowding">
-                <h3>Matricule-se e faça acontecer!</h3>
-                <p>Precisamos de <strong>300 alunos</strong> pré-matriculados até dia 26/05 para abrir o curso de Web Design no dia 27/05!</p>
+                <h3>Vire um Hebe Designer!</h3>
+                <p>Precisamos de <strong>100 alunos</strong> pré-matriculados até dia 17/05 para abrir o curso de Web Design no dia 20/05!</p>
                 <div class="progress">
                   <div class="bar bar-success" style="width: 35%;"></div>
                 </div>
-                <span class="student_counter">0/300 alunos matriculados</span>
+                <span class="student_counter">0/100 alunos matriculados</span>
                 <h4>Plano Silver: R$40,00/mês </h4>
                   <p>
                     Nesse plano você tem acesso a todo o conteúdo do site, incluindo videoaulas, exercícios e projetos <i class="icon-info-sign"></i></p>
@@ -196,10 +197,11 @@
                 </a>
               </p>
             </div>
-            <div id="subscription" class="span4 offset1">
+
+            <div class="span4 offset1">
               <h3>Inscreva-se abaixo</h3>
               <p>e receba novidades sobre o lançamento!</p>
-              <div>
+              <div class="row">
                 <div id="login_box">
                   <form id="subscribe" action="subscribe.php" method="POST">
                     <div class="clearfix">
@@ -218,49 +220,45 @@
                   </form>
                 </div>
               </div>
-              <div id="messages"></div>
             </div>
         </div>
-
-        <div id="participe" class="div_about">          
-          <div id="sobre" class="clearfix about_container page_container">
-            <div class="span3">
-              <h3>Quem somos</h3>
-              <p>Uma equipe que acredita no aprendizado coletivo!</p>
-              <p>Nosso time é formado por ex-alunos da Unicamp, de diferentes áreas, que foram unidos pela vontade de trazer 
-                novas ideias para mudar e melhorar os usos da tecnologia no campo da educação.
-                Temos uma garagem com mesa, cadeiras, lousa e wifi pronta para receber encontros de gente 
-                interessante que quer ensinar e aprender. Basta falar conosco!</p>
+        <div id="sobre" class="about_container page_container">
+          <div class="span3">
+            <h3>Quem somos</h3>
+            <p>Uma equipe que acredita no aprendizado coletivo!</p>
+            <p>Nosso time é formado por ex-alunos da Unicamp, de diferentes áreas, que foram unidos pela vontade de trazer 
+              novas ideias para mudar e melhorar os usos da tecnologia no campo da educação.
+              Temos uma garagem com mesa, cadeiras, lousa e wifi pronta para receber encontros de gente 
+              interessante que quer ensinar e aprender. Basta falar conosco!</p>
+          </div>
+          <div class="span9 profiles">
+            <div class="span2">
+              <div class="profile_img">
+                <img src="http://mupi.me/assets/img/ana.jpg" />
+              </div>
+              <h5>Ana Rute Mendes</h5>
+              <p>Formada em midialogia pela Unicamp, é apaixonada pela web e tudo que ela pode proporcionar. Acredita no Mupi como uma forma de unir pessoas aravés da troca de conhecimento.</p>
             </div>
-            <div class="span9 profiles">
-              <div class="span2">
-                <div class="profile_img">
-                  <img src="img/ana.jpg" />
-                </div>
-                <h5>Ana Rute Mendes</h5>
-                <p>Formada em midialogia pela Unicamp, é apaixonada pela web e tudo que ela pode proporcionar. Acredita no Mupi como uma forma de unir pessoas aravés da troca de conhecimento.</p>
+            <div class="span2">
+              <div class="profile_img">
+                <img src="http://mupi.me/assets/img/banduk.jpg" />
               </div>
-              <div class="span2">
-                <div class="profile_img">
-                  <img src="img/banduk.jpg" />
-                </div>
-                <h5>Mauricio Banduk</h5>
-                <p>Engenheiro de Computação, apaixonado por web e todas as tecnologias ligadas à ela. Colaboração, novidade e experiência são palavras que o guiam para o desenvolvimento.</p>
+              <h5>Mauricio Banduk</h5>
+              <p>Engenheiro de Computação, apaixonado por web e todas as tecnologias ligadas à ela. Colaboração, novidade e experiência são palavras que o guiam para o desenvolvimento.</p>
+            </div>
+            <div class="span2">
+              <div class="profile_img">
+                <img src="http://mupi.me/assets/img/paulets.jpg" />
               </div>
-              <div class="span2">
-                <div class="profile_img">
-                  <img src="img/paulets.jpg" />
-                </div>
-                <h5>Paula Furtado</h5>
-                <p>Formada em Letras, pesquisadora em educação e tecnologia. Louca por literatura, música popular brasileira, internet e pessoas movidas pela paixão de acrescentar algo no mundo!</p>
+              <h5>Paula Furtado</h5>
+              <p>Formada em Letras, pesquisadora em educação e tecnologia. Louca por literatura, música popular brasileira, internet e pessoas movidas pela paixão de acrescentar algo no mundo!</p>
+            </div>
+            <div class="span2">
+              <div class="profile_img">
+                <img src="http://mupi.me/assets/img/vir.jpg" />
               </div>
-              <div class="span2">
-                <div class="profile_img">
-                  <img src="img/vir.jpg" />
-                </div>
-                <h5>Virgilio Santos</h5>
-                <p>Formado em Computação pela Unicamp e desenvolvedor de software. Tem um interesse muito grande por Tecnologia e Educação e está sempre envolvido em projetos nessa área, como o Mupi!</p>
-              </div>
+              <h5>Virgilio Santos</h5>
+              <p>Formado em Computação pela Unicamp e desenvolvedor de software. Tem um interesse muito grande por Tecnologia e Educação e está sempre envolvido em projetos nessa área, como o Mupi!</p>
             </div>
           </div>
         </div>

@@ -1,62 +1,77 @@
 $(document).ready(function() {
-  /*var header = $('#fixed-header');
-  var form = $('#signup');
-  var start = $(form).offset().top;
-  
-  $.event.add(window, "scroll", function() {
-    var p = $(window).scrollTop();
-    if(p > start){
-      $(header).addClass("visible-header");
-    }
-    else{
-      $(header).removeClass("visible-header");
-    }
+
+  var hash = window.location.hash;
+  if(hash)
+    jQuery('html, body').animate({ scrollTop: $(hash).offset().top - 70 }, 300);
+
+  //Scrolling to the given element
+  jQuery(".menu a, .participe a").click(function(e){
+    jQuery('html, body').animate({ scrollTop: $(this.hash).offset().top - 70 }, 300);
   });
 
-  $("#show-form").click(function(){
-    $(header).addClass("visible-form");
-  });*/
+  // Popup
+  jQuery('.popup').click(function(event) {
+    event.preventDefault();
+    var width  = 575,
+    height = 400,
+    left   = ($(window).width()  - width)  / 2,
+    top    = ($(window).height() - height) / 2,
+    url    = this.href + '&url=' + encodeURI(window.location),
+    opts   = 'status=1' +
+    ',width='  + width  +
+    ',height=' + height +
+    ',top='    + top    +
+    ',left='   + left;
+    window.open(url, 'twitter', opts);
+    return false;
+  });
 
+  // Subscription to mailchip
+  jQuery('#subscribe').submit(function(e) {
+    //Preventing the form to be submitted
+  	e.preventDefault(); 
 
+    // Hide subscribe form
+  	jQuery("#subscribe").fadeOut("slow");
+    jQuery("#messages").hide();
 
-    jQuery('#subscribe').submit(function(e) {
-	e.preventDefault();
-	jQuery("#subscribe").fadeOut("slow");
-	var form = $(this);
-	var action = form.attr('action');
-	name = $("input[name='name']",form).val();
-	email = $("input[name='email']",form).val();
-	jQuery.ajax({
-	    url: action,
-	    type: 'POST',
-	    data: {
-		name: name,
-		email: email
-	    },
-	    success: function(data){
-		var res = jQuery.parseJSON(data);
-		if(res.error){
-		    var error = res.error.toString();
-		    var number = 0;
-		    if(error.indexOf("Invalid Email Address") >= 0) number = 1;
-		    else if(error.indexOf("is already subscribed to list") >= 0) number = 2;
-		    else number = 3;
-		    if(number == 2){
-			jQuery("#messages").addClass("text-warning").html(res.data).show();
-		    } else {
-			jQuery("#email").parent().addClass("error");
-			jQuery("#subscribe").fadeIn("fast");
-		    }
-		} else {
-		    jQuery("#messages").addClass("text-success").html(res.data).show();
-		}
-	    },
-	    error: function() {
-		jQuery("#messages").addClass("text-error").html("<p>Houve um erro, por favor, tente mais tarde</p>" + res.data).show();
-	    }
-	});
-	return false;
+    // Form and action
+  	var form = $(this);
+  	var action = form.attr('action');
+  	
+    // Date
+    name = $("input[name='name']",form).val();
+  	email = $("input[name='email']",form).val();
+
+    //
+    //jQuery("#subscribing")
+  	
+    jQuery.ajax({
+     url: action,
+     type: 'POST',
+     data: {
+      name: name,
+      email: email
+    },
+    success: function(data){
+      var res = jQuery.parseJSON(data);
+      if(res.error){
+         jQuery("#subscribe").fadeIn("fast");
+         jQuery("#messages").removeClass("text-success").addClass("text-error").html(res.data).fadeIn("fast");
+      } else {
+        jQuery("#subscribe").fadeIn("fast");
+        jQuery("#messages").removeClass("text-error").addClass("text-success").html(res.data).fadeIn("fast");
+      }
+    },
+    error: function() {
+      jQuery("#messages")
+        .removeClass("text-success")
+        .addClass("text-error")
+        .html("<p>Houve um erro no servidor, por favor nos contate através do e-mail abaixo</p>" + res.data).show();
+      }
     });
+  	return false;
+  });
 
 
 });

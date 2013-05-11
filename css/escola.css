@@ -1,0 +1,300 @@
+ body{
+  background: url('../img/first_aid_kit.png') 0 0 repeat !important;
+  padding-top:40px;
+}
+
+.page_container {
+  width: 1000px;
+  margin: 0 auto;
+  padding_bottom: 60px;
+}
+
+h2,h3, h4{
+  font-family: 'Bitter', serif;
+}
+
+.container{
+  padding: 10px 0;
+}
+
+/* Plans */
+.plans{
+  list-style: none;
+  border-bottom: 1px #323 dashed;
+  margin: 0 0 30px 0;
+  padding-bottom: 15px;
+}
+.plan{
+  padding: 0px 10px;
+  margin: 0 10px;
+  background: rgba(250, 250, 250, 0.5);
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.plan i{
+  font-size: 20px;
+  background: none;
+}
+.plan ul{
+  list-style: none;
+}
+.plan ul li{
+  line-height: 2em;
+  font-size: 1.2em;
+}
+.plan form{
+  text-align: center;
+}
+.plan .badges-logos li{
+  line-height: 5em;
+  margin: 0 5px;
+}
+.profiles {
+  height: 450px;
+}
+.profiles .btn {
+  height: 430px;
+  margin: 0 5px 0 0;
+}
+/**/
+
+.mupi-navbar {
+  height: 40px;
+}
+.not_logged_header .menu{
+  line-height: 40px;
+}
+.logo {
+  margin-top: 3px;
+}
+.logo_about{
+  height: auto;
+  margin: 25px auto;
+  text-align: center;
+  width: 250px;
+}
+
+.escola{
+  margin-top: 30px;
+  text-align: justify;
+}
+
+#participe{
+  padding: 30px 0;
+  height: auto;
+}
+
+.field{
+  float: left;
+}
+.not_logged_header .input, .not_logged_header .participe, .tel {
+  text-align: center;
+  line-height: 40px;
+}
+#subscribe{
+  text-align: center;
+}
+
+.tel a:hover{
+  color:  #08C;
+}
+
+.not_logged_header .participe a{
+ padding: 0;
+}
+
+.btn-facebook {
+  color: #ffffff;
+  background-color: #3b5998;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#627aad), to(#3b5998));
+  background-image: -moz-linear-gradient(top, #627aad, #3b5998);
+  background-image: -ms-linear-gradient(top, #627aad, #3b5998);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #627aad), color-stop(100%, #3b5998));
+  background-image: -webkit-linear-gradient(top, #627aad, #3b5998);
+  background-image: -o-linear-gradient(top, #627aad, #3b5998);
+  background-image: linear-gradient(top, #627aad, #3b5998);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#627aad', endColorstr='#3b5998', GradientType=0);
+  border-color: #3b5998 #3b5998 #263961;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  text-shadow: none !important;
+}
+
+.btn-facebook:hover {
+  background-position: 0px 30px;
+  background-image: none;
+  color: #333;
+  text-decoration: none;
+}
+
+
+.btn i{
+  vertical-align: top;
+}
+.btn-large {
+  padding: 5px 12px;
+  font-size: 0.9em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.share-buttons{
+  text-align:center;
+}
+.price{
+  text-align: center;
+  font-weight: bold;
+}
+
+.crowdcrowding{
+  background-color: rgba(256,256,256,0.4);
+  padding: 10px;
+  text-align: center;
+}
+.plan a{
+  text-align: center;
+}
+
+#messages{
+  display: none;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  width: 100%;
+}
+
+
+
+/*header*/
+.logo {
+  background: url("../img/logomini.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  float: right;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.mupi-navbar {
+  background-color: #332213;
+  box-shadow: 0 0 2px 2px #444;
+  height: 40px;
+}
+#content {
+  padding-top: 10px;
+}
+.not_logged_header {
+  text-align: right;
+  line-height: 40px;
+}
+.not_logged_header a {
+  color: white;
+  padding: 0 15px;
+}
+.not_logged_header a:hover {
+  text-decoration: none;
+  color: #08C;
+}
+#login_header_but {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+.alert {
+  margin-top: 40px !important;
+}
+
+
+
+/* About */
+.profile {
+  float: left;
+  width: 165px;
+  margin: 0 10px;
+}
+.profile_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 80px;
+  margin: 0 auto;
+  border: 5px solid #f16623;
+  overflow: hidden;
+}
+.profile_img img {
+  max-width: none;
+  height: 100%;
+}
+.profile_body {
+  margin: 10px 0;
+  background: rgba(256, 256, 256, 0.6);
+  padding: 5px;
+  height: 190px;
+  border: 1px solid #CCC;
+}
+.about_sidebar {
+  width: 25%;
+  float: left;
+}
+.about_body {
+  width: 740px;
+  padding: 20px;
+  float: left;
+}
+.profile_body {
+  font-size: 0.8em;
+}
+.profile_body span {
+  font-weight: bold;
+}
+.div_about {
+  background: rgba(256, 256, 256, 0.4);
+  width: 100%;
+  border-bottom: 1px dashed #CCC;
+}
+
+
+/*footer*/
+footer[role="contentinfo"]{
+  color:#666;
+  background:#f5f5f5;
+  padding:0;
+  clear:both;
+  position:relative;
+  margin: 0;
+}
+.social{
+  text-align: center;
+  padding: 8px 0 0;
+}
+.social li{
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.fb, .ln, .tw {
+  background-image: url('../img/social.png');
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.fb {
+  background-position: 0 65px;
+}
+.ln {
+  background-position: 0 97px;
+}
+.tw {
+  background-position: 0 196px;
+}
+.fb:hover {
+  background-position: 0 33px;
+}
+.ln:hover {
+  background-position: 0 130px;
+}
+.tw:hover {
+  background-position: 0 163px;
+}
