@@ -63,7 +63,7 @@
     </script>
   
     <script src="http://mupi.me/assets/javascripts/cohorts.js"></script>
-
+    <script type="text/javascript" src="js/mailchimp.js"></script>
     <link rel="stylesheet" href="css/escola.css" type="text/css" media="screen"/>
   
   </head>
@@ -146,7 +146,63 @@
                   </ul>
                 </li>
               </ul>
+
               
+              <!-- Mailchimp subscription button for a given course -->
+              <div class="mc_embed_signup clearfix">
+                <div class="next-course clearfix">
+                  <div class="img">
+                    <a href="http://wordpress.org">
+                      <img src="img/wp.png" alt="wordpress" target="_blank">
+                    </a>
+                  </div>
+                  <div class="descr">
+                    Wordpress: o gerenciador de conteúdos mais usado da web
+                    <a class="info btn"> Saiba mais </a>
+                    <a class="subscribe btn"> Eu quero </a>
+                  </div>
+                </div>
+                <form action="http://mupi.us6.list-manage.com/subscribe/post?u=019b0afa5dc43eb80d4496614&amp;id=125e804fdc" post-json="http://mupi.us6.list-manage.com/subscribe/post-json?u=019b0afa5dc43eb80d4496614&amp;id=125e804fdc&c=?" method="post" class="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form validate clearfix" target="_blank" novalidate>
+                  <div class="mc-field-group clearfix">
+                    <i class="icon-remove-sign"></i>
+                    <input type="email" value="" name="EMAIL" placeholder="Seu e-mail" class="required email">
+                    <input type="submit" value="OK" name="subscribe" class="btn">
+                  </div>
+                  <div class="mce-responses" class="clear">
+                    <div class="response mce-error-response" style="display:none"></div>
+                    <div class="response mce-success-response" style="display:none"></div>
+                  </div>
+                </form>
+              </div>
+            
+              <!-- Mailchimp subscription button for a given course -->
+              <div class="mc_embed_signup clearfix">
+                <div class="next-course clearfix">
+                  <div class="img">
+                    <a href="http://wordpress.org">
+                      <img src="img/wp.png" alt="wordpress" target="_blank">
+                    </a>
+                  </div>
+                  <div class="descr">
+                    Wordpress: o gerenciador de conteúdos mais usado da web
+                    <a class="info btn"> Saiba mais </a>
+                    <a class="subscribe btn"> Eu quero </a>
+                  </div>
+                </div>
+                <form action="http://mupi.us6.list-manage.com/subscribe/post?u=019b0afa5dc43eb80d4496614&amp;id=125e804fdc" post-json="http://mupi.us6.list-manage.com/subscribe/post-json?u=019b0afa5dc43eb80d4496614&amp;id=125e804fdc&c=?" method="post" class="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form validate clearfix" target="_blank" novalidate>
+                  <div class="mc-field-group clearfix">
+                    <i class="icon-remove-sign"></i>
+                    <input type="email" value="" name="EMAIL" placeholder="Seu e-mail" class="required email">
+                    <input type="submit" value="OK" name="subscribe" class="btn">
+                  </div>
+                  <div class="mce-responses" class="clear">
+                    <div class="response mce-error-response" style="display:none"></div>
+                    <div class="response mce-success-response" style="display:none"></div>
+                  </div>
+                </form>
+              </div>
+
+
             </div>
             <div class="span5">
               <div class="crowdcrowding">
@@ -161,10 +217,21 @@
                     Nesse plano você tem acesso a todo o conteúdo do site, incluindo videoaulas, exercícios e projetos <i class="icon-info-sign"></i></p>
                     <span>A assinatura tem a duração de 3 meses, podendo ser renovada a qualquer momento. Pedidos de cancelamento devem ser feito pelo email contato@mupi.me ou pelo telefone 019 3289 3914</span>
                     <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-                    <form target="pagseguro" action="https://pagseguro.uol.com.br/v2/pre-approvals/request.html" method="post">
+                    <form target="pagseguro" action="https://pagseguro.uol.com.br/v2/checkout/payment.html" method="post">
                     <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-                    <input type="hidden" name="code" value="21FB4C9824243D4EE438AF84925ADA1C" />
-                    <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/assinaturas/120x53-assinar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                      <input type="hidden" name="receiverEmail" value="ideas.matchbox@gmail.com" />
+                      <input type="hidden" name="currency" value="BRL" />
+
+                      <input type="hidden" name="itemId1" value="0001">
+                      <input type="hidden" name="itemDescription1" value="Curso webdesign" />
+                      <input type="hidden" name="itemAmount1" value="40.00" />
+                      <input type="hidden" name="itemQuantity1" value="1" />
+                      <input type="hidden" name="itemWeight" value="0" />
+  
+                      <input type="hidden" name="senderEmail" value="banduk@gmail.com">
+                      <input type="hidden" name="reference" value="anarutecvm@gmail.com">
+
+                      <input type="image" src="img/logo.png" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
                     </form>
                     <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
               </div>

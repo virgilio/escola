@@ -1,3 +1,5 @@
+*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
  body{
   background: url('../img/first_aid_kit.png') 0 0 repeat !important;
   padding-top:40px;
@@ -295,4 +297,118 @@ footer[role="contentinfo"]{
 }
 .tw:hover {
   background-position: 0 163px;
+}
+
+
+
+
+/* Poll */
+.mc_embed_signup{
+  width: 260px;
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+.next-course{
+  border-radius: 5px;
+  background-color: rgba(220, 220, 220, 0.4);
+  position: relative;
+  box-shadow: 0 0 6px #DDD;
+  border: dashed 1px #CCC;
+}
+.next-course .img{
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+.next-course img{
+  max-width: 80px;
+  max-height: 80px;
+}
+.next-course .descr{
+  margin-left: 90px;
+  margin-bottom: 2.2em;
+}
+
+.next-course .btn{
+  font-size: 1em;
+  margin: 0;
+  padding: 0 3px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 5px 10px;
+}
+.next-course .btn.info{
+  margin-right: 90px;
+}
+
+.mc-field-group{
+
+}
+
+.mc_embed_signup form{
+  display: none;
+  position: absolute;
+  top: 0px;
+  width: 260px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 15px;
+  height: 100%;
+}
+
+.mc_embed_signup form i{
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  font-size: 22px;
+  color:rgba(220, 90, 100, 1);
+  text-shadow: 0px 0px 2px #a00;
+  cursor: pointer;
+}
+.mc_embed_signup form input[type="email"]{
+  font-size: 1.2em;
+  position: absolute;
+  top: 6px;
+  width: 210px;
+  padding: 11px 5px;
+}
+
+.mc_embed_signup input[type="submit"] {
+  font-size: 1em;
+  right: 35px;
+  top: 5px;
+  position: absolute;
+  line-height: 1.2em;
+  border-radius: 5px;
+}
+
+.mce_inline_error, label.error{
+  position: absolute;
+  width: 230px;
+  top: 35px;
+  background: rgba(220, 90, 100, 1);
+  padding: 5px;
+  border-radius: 5px;
+}
+.mce-responses>*{
+  position: absolute;
+  top: 35px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 100%;
+  left: 0;
+  padding: 5px;
+}
+.mce-responses a, .mce-responses a:hover{
+  color: #335;
+}
+
+.mce-responses>.mce-success-response{
+  background: rgba(90, 220, 100, 1);
+}
+.mce-responses>.mce-error-response{
+  background: rgba(220, 90, 100, 1);
 }

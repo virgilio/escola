@@ -74,4 +74,15 @@ $(document).ready(function() {
   });
 
 
+  $(".next-course .subscribe").click(function(){
+    $(this).closest(".mc_embed_signup").find("form").show();
+  });
+
+  $(".icon-remove-sign").click(function(){
+    $(this).closest("form").hide();
+    $(this).closest("form").find('.mce_tmp_error_msg, div.mce_inline_error, label.error').remove();
+    $(this).closest("form").find('.mce-responses .response').hide();
+  });
+
+
 });
