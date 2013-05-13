@@ -1,4 +1,4 @@
-*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* *{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } */
 
  body{
   background: url('../img/first_aid_kit.png') 0 0 repeat !important;
@@ -22,7 +22,7 @@ h2,h3, h4{
 /* Plans */
 .plans{
   list-style: none;
-  border-bottom: 1px #323 dashed;
+  /*border-bottom: 1px #323 dashed;*/
   margin: 0 0 30px 0;
   padding-bottom: 15px;
 }
@@ -51,6 +51,37 @@ h2,h3, h4{
   line-height: 5em;
   margin: 0 5px;
 }
+
+/* Parceiros */
+#parceiros h3{
+  text-align: center;
+}
+#parceiros ul{
+  list-style: none;
+  margin: 0 auto;
+}
+#parceiros ul li{
+  width: 260px;
+  text-align: center;
+}
+#parceiros ul li a{
+  text-decoration: none;
+  color: #444;
+}
+#parceiros ul li a:hover{
+  color: #f69220;
+}
+#parceiros ul li a label{
+  background-color: #e5e5e5;
+  border-bottom: 2px solid #aaa;
+  margin-top: 10px;
+  text-align: center;
+  border-top: 2px solid #aaa;
+}
+#parceiros ul li a label:hover, #parceiros ul li a:hover label{
+  background: #fff;
+}
+/* Fim Parceiros */
 .profiles {
   height: 450px;
 }
@@ -76,8 +107,10 @@ h2,h3, h4{
 }
 
 .escola{
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: justify;
+  padding-top: 20px;
 }
 
 #participe{
