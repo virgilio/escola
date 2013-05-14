@@ -1,5 +1,6 @@
-$(document).ready(function() {
 
+
+$(document).ready(function() {
   var hash = window.location.hash;
   if(hash)
     jQuery('html, body').animate({ scrollTop: $(hash).offset().top - 70 }, 300);
@@ -75,7 +76,10 @@ $(document).ready(function() {
 
 
   $(".next-course .subscribe").click(function(){
-    $(this).closest(".mc_embed_signup").find("form").show();
+    $(".next-courses form").slideUp('fast');
+    $(".next-courses form").find('.mce_tmp_error_msg, div.mce_inline_error, label.error').remove();
+    $(".next-courses form").find('.mce-responses .response').hide();
+    $(this).closest(".mc_embed_signup").find("form").slideDown('fast').find(".email").focus();
   });
 
   $(".icon-remove-sign").click(function(){
@@ -83,6 +87,5 @@ $(document).ready(function() {
     $(this).closest("form").find('.mce_tmp_error_msg, div.mce_inline_error, label.error').remove();
     $(this).closest("form").find('.mce-responses .response').hide();
   });
-
 
 });
