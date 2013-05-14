@@ -22,7 +22,7 @@ var fnames = new Array();
   }
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+  script.src = 'js/jquery.form-n-validate.js';
   head.appendChild(script);
   var err_style = '';
   try {
@@ -124,14 +124,13 @@ var fnames = new Array();
   function mce_success_cb(resp) {
     var thisForm = $(this);
     if (resp.result == "success") {
-      thisForm.find('.mce-' + resp.result + '-response').show().delay(5000).slideUp();
-      thisForm.find('.mce-' + resp.result + '-response').html(
-        "Entre em seu e-mail e confirme-o, por favor"
-        //resp.msg
-      ).delay(5000).slideUp();
+      thisForm.find('.mce-' + resp.result + '-response').show().delay(8000).slideUp();
+      thisForm.find('.mce-' + resp.result + '-response').html(resp.msg).delay(8000).slideUp();
       thisForm.find('.mc-embedded-subscribe-form').each(function () {
         this.reset();
       });
+      thisForm.find(input_id).focus();
+
     } else {
       var index = -1;
       var msg;
@@ -155,8 +154,9 @@ var fnames = new Array();
       }
       try {
         if (index == -1) {
-          thisForm.find('.mce-' + resp.result + '-response').show().delay(5000).slideUp();
-          thisForm.find('.mce-' + resp.result + '-response').html(msg).delay(5000).slideUp();
+          thisForm.find('.mce-' + resp.result + '-response').show().delay(8000).slideUp();
+          thisForm.find('.mce-' + resp.result + '-response').html(msg).delay(8000).slideUp();
+          thisForm.find(input_id).focus();
         } else {
           err_id = 'mce_tmp_error_msg';
           html = '<div class="' + err_id + '" style="' + err_style + '"> ' + msg + '</div>';
@@ -174,16 +174,18 @@ var fnames = new Array();
             f = thisForm.find().parent(input_id).get(0);
           }
           if (f) {
-            $(f).append(html).delay(5000).slideUp();
+            $(f).append(html).delay(8000).slideUp();
             thisForm.find(input_id).focus();
           } else {
-            thisForm.find('.mce-' + resp.result + '-response').show().delay(5000).slideUp();
-            thisForm.find('.mce-' + resp.result + '-response').html(msg).delay(5000).slideUp();
+            thisForm.find('.mce-' + resp.result + '-response').show().delay(8000).slideUp();
+            thisForm.find('.mce-' + resp.result + '-response').html(msg).delay(8000).slideUp();
+            thisForm.find(input_id).focus();
           }
         }
       } catch (e) {
-        thisForm.find('.mce-' + resp.result + '-response').show().delay(5000).slideUp();
-        thisForm.find('.mce-' + resp.result + '-response').html(msg).delay(5000).slideUp();
+        thisForm.find('.mce-' + resp.result + '-response').show().delay(8000).slideUp();
+        thisForm.find('.mce-' + resp.result + '-response').html(msg).delay(8000).slideUp();
+        thisForm.find(input_id).focus();
       }
     }
   }

@@ -57,6 +57,10 @@ h3{
   margin: 0 5px;
 }
 
+.tech-badge{
+  text-align: center;
+}
+
 /* Parceiros */
 #parceiros h3{
   text-align: center;
@@ -333,7 +337,7 @@ footer[role="contentinfo"]{
 .fb, .ln, .tw {
   background-image: url('../img/social.png');
   width: 32px;
-  height: :;px;
+  height: 32px;
   display: block;
 }
 

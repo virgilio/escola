@@ -1,4 +1,15 @@
 
+// Get variable from location
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+  }
 
 $(document).ready(function() {
   var hash = window.location.hash;
@@ -27,6 +38,8 @@ $(document).ready(function() {
     return false;
   });
 
+ 
+
   // Subscription to mailchip
   jQuery('#subscribe').submit(function(e) {
     //Preventing the form to be submitted
@@ -47,28 +60,29 @@ $(document).ready(function() {
     //
     //jQuery("#subscribing")
   	
-    jQuery.ajax({
-     url: action,
-     type: 'POST',
-     data: {
-      name: name,
-      email: email
-    },
-    success: function(data){
-      var res = jQuery.parseJSON(data);
-      if(res.error){
-         jQuery("#subscribe").fadeIn("fast");
-         jQuery("#messages").removeClass("text-success").addClass("text-error").html(res.data).fadeIn("fast");
-      } else {
-        jQuery("#subscribe").fadeIn("fast");
-        jQuery("#messages").removeClass("text-error").addClass("text-success").html(res.data).fadeIn("fast");
-      }
-    },
-    error: function() {
-      jQuery("#messages")
-        .removeClass("text-success")
-        .addClass("text-error")
-        .html("<p>Houve um erro no servidor, por favor nos contate através do e-mail abaixo</p>" + res.data).show();
+    jQuery.ajax(
+      {
+        url: action,
+        type: 'POST',
+        data: {
+        name: name,
+        email: email
+      },
+      success: function(data){
+        var res = jQuery.parseJSON(data);
+        if(res.error){
+           jQuery("#subscribe").fadeIn("fast");
+           jQuery("#messages").removeClass("text-success").addClass("text-error").html(res.data).fadeIn("fast");
+        } else {
+          jQuery("#subscribe").fadeIn("fast");
+          jQuery("#messages").removeClass("text-error").addClass("text-success").html(res.data).fadeIn("fast");
+        }
+      },
+      error: function() {
+        jQuery("#messages")
+          .removeClass("text-success")
+          .addClass("text-error")
+          .html("<p>Houve um erro no servidor, por favor nos contate através do e-mail abaixo</p>" + res.data).show();
       }
     });
   	return false;
@@ -91,4 +105,7 @@ $(document).ready(function() {
   $('.sobre-assinatura').tooltip({
     placement: 'top'
   });
-});
+
+  //Generating referral link from url query
+  jQuery(".mc-embedded-subscribe-form .referral").val(getQueryVariable("REFERRAL"));
+}); 
