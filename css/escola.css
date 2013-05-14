@@ -14,6 +14,9 @@
 h2,h3, h4{
   font-family: 'Bitter', serif;
 }
+h3{
+  text-align: center;
+}
 
 .container{
   padding: 10px 0;
@@ -56,12 +59,15 @@ h2,h3, h4{
 #parceiros h3{
   text-align: center;
 }
+#parceiros img{
+  width: 80%;
+}
 #parceiros ul{
   list-style: none;
   margin: 0 auto;
 }
 #parceiros ul li{
-  width: 260px;
+  /*width: 260px;*/
   text-align: center;
 }
 #parceiros ul li a{
@@ -114,8 +120,8 @@ h2,h3, h4{
 }
 
 #participe{
-  padding: 30px 0;
-  height: auto;
+  padding: 10px 0;
+  /*height: auto;*/
 }
 
 .field{
@@ -173,6 +179,11 @@ h2,h3, h4{
 }
 .share-buttons{
   text-align:center;
+}
+.share-buttons a{
+  display: inline-block;
+  width: 170px;
+  margin-bottom: 5px;
 }
 .price{
   text-align: center;
@@ -337,9 +348,9 @@ footer[role="contentinfo"]{
 
 /* Poll */
 .mc_embed_signup{
-  width: 260px;
+  /*width: 260px;*/
   position: relative;
-  display: inline-block;
+  /*display: inline-block;*/
   margin-right: 5px;
 }
 .next-course{
