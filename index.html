@@ -74,45 +74,47 @@
   <body>
     <div class="wrapper">
       <div class="navbar mupi-navbar navbar-fixed-top not_logged_header">
-        <div class="page_container row">
-          <div class="span2 participe">
-            <h4><a href="#participe">Matrícula</a></h4>
-          </div>
-
-          <div class="tel span5">
-            <div class="phone">
-              <a href="tel:+551932893914">
-                <i class="icon-phone "></i> +55 (19)32893914
-              </a>
+        <div class="container">
+          <div class="row">
+            <div class="span2 participe">
+              <h4><a href="#participe">Matrícula</a></h4>
             </div>
-          </div>
-          
 
-          <div class="span5 menu">            
-            <a style="border-right: 1px solid white;" href="#escola">Nossa Escola!</a>
-            <a href="#sobre">Quem Somos</a>
-            <a class="logo" href="#participe" alt="Mupi"></a>
+            <div class="tel span2">
+              <div class="phone">
+                <a href="tel:+551932893914">
+                  <i class="icon-phone "></i> +55 (19)32893914
+                </a>
+              </div>
+            </div>
+        
+            <div class="span5 offset3 menu">            
+              <a style="border-right: 1px solid white;" href="#parceiros">Nossos parceiros</a>
+              <a href="#sobre">Quem Somos</a>
+              <a class="logo" href="#participe" alt="Mupi"></a>
+            </div>
+
           </div>
         </div>
       </div>
       <div id="content">              
-        <div class="escolar about_container page_container clearfix">
-          <div class="logo_about span4">
-            <img src="img/logo.png" />
-          </div>
-          <div class="span8">
-            <div class="escola span8">
+        <div class="about_container container">
+          <div class="row escola">
+            <div class="span4">
+              <img src="img/logo.png" />
+            </div>
+            <div class="span8">
               <p>Na escola mupi, unimos nossas duas maiores paixões: tecnologia e educação. 
-                Criamos uma escola de <strong>tecnologia criativa</strong>, que pode ser acessada de qualquer lugar, com 
-                cursos que te colocam em contato com experiências de trabalho reais. 
+                Criamos uma escola de <strong>tecnologia criativa</strong> que pode ser acessada de qualquer lugar. 
                 E o melhor, 100% em português  =) </p>           
                 <iframe class="pull-right" src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmupi.br&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=trebuchet+ms&amp;colorscheme=light&amp;action=like&amp;height=35&amp;appId=292772274170801" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowtransparency="true"></iframe>
-              </div>
+
             </div>
           </div>
+        </div>
 
           <div id="participe" class="div_about">          
-            <div class="page_container clearfix">
+            <div class="container">
               <div class="row">
                 <div class="span6">
                   <ul class="plans clearfix">
@@ -156,8 +158,9 @@
                     <p>Precisamos de <strong>200 alunos</strong> pré-matriculados até dia 26/05 para abrir o curso de Web Design no dia 27/05!</p>
                     <div class="progress">
                       <div class="bar bar-success" style="width: 0%;"></div>
+                      <span class="student_counter">0/200 alunos matriculados</span>
                     </div>
-                    <span class="student_counter">0/200 alunos matriculados</span>
+                    
                     <h4>Plano Básico: R$39,90/mês </h4>
                     <p>
                       Nesse plano você tem acesso a todo o conteúdo do site, incluindo videoaulas, exercícios e projetos <i class="icon-info-sign sobre-assinatura" title="A assinatura tem a duração de 3 meses, podendo ser renovada a qualquer momento. Pedidos de cancelamento devem ser feito pelo email contato@mupi.me ou pelo telefone 019 3289 3914" data-toggle="tooltip"></i>
@@ -171,15 +174,14 @@
                     <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
                     <h4>Plano Completo: R$49,90/mês <label class="label">EM BREVE!</label></h4>
                     <p>
-                      Nesse plano além do acesso a todo o conteúdo, oferecemos suporte pedagógico individual, feedback personalizado e consultoria <i class="icon-info-sign"></i>
+                      Nesse plano além do acesso a todo o conteúdo, oferecemos suporte pedagógico individual, feedback personalizado e consultoria <i class="icon-info-sign sobre-assinatura" data-toggle="tooltip" title="A assinatura tem a duração de 3 meses, podendo ser renovada a qualquer momento. Pedidos de cancelamento devem ser feito pelo email contato@mupi.me ou pelo telefone 019 3289 3914"></i>
                     </p>
                     <a class="subscribe btn"> Eu quero </a>
                   </div>  
                 </div>
               </div>
               <div class="row next-courses">
-
-
+                <h4>Escolha nossos próximos cursos!</h4>
                 <!-- Mailchimp subscription button for a given course -->
                 <div class="mc_embed_signup pull-left span3">
                   <div class="next-course">
@@ -348,7 +350,7 @@
             </div>
           </div>
           <div class="div_about">          
-            <div id="sobre" class="clearfix about_container page_container">
+            <div id="sobre" class="clearfix about_container container">
               <div class="row">
                 <div class="span12">
                   <h2>Quem somos</h2>
@@ -388,10 +390,10 @@
           </div>
         </div>
       </div>
-    <footer role="contentinfo" class="navbar">
-      <div class="page_container">
+    <footer role="contentinfo">
+      <div class="container">
         <div class="social row">
-          <ul class="social inline">
+          <ul class="span12 social inline">
             <li><a href="http://www.facebook.com/mupi.br" target="_blank" title="facebook" class="fb"></a></li>
             <li><a href="http://www.linkedin.com/company/mupi" target="_blank" title="linkedin" class="ln"></a></li>
             <li><a href="https://twitter.com/mbideas" target="_blank" title="twitter" class="tw"></a></li>

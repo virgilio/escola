@@ -9,6 +9,7 @@
   width: 1000px;
   margin: 0 auto;
   padding_bottom: 60px;
+  background-color: red;
 }
 .label{
   cursor: default;
@@ -20,21 +21,18 @@ h3{
   text-align: center;
 }
 
-.container{
-  padding: 10px 0;
-}
 
 /* Plans */
 .plans{
   list-style: none;
   /*border-bottom: 1px #323 dashed;*/
-  margin: 0 0 30px 0;
   padding-bottom: 15px;
+  margin: 0;
+  background: rgba(250, 250, 250, 0.5);
 }
 .plan{
   padding: 0px 10px;
   margin: 0 10px;
-  background: rgba(250, 250, 250, 0.5);
   border-radius: 10px;
   vertical-align: middle;
 }
@@ -116,7 +114,7 @@ h3{
 .logo_about{
   height: auto;
   margin: 25px auto;
-  text-align: center;
+  /*text-align: center;*/
   width: 250px;
 }
 
@@ -124,18 +122,20 @@ h3{
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: justify;
-  padding-top: 20px;
 }
 
 #participe{
-  padding: 10px 0;
+  padding: 25px 0;
   /*height: auto;*/
 }
 
 .field{
   float: left;
 }
-.not_logged_header .input, .not_logged_header .participe, .tel {
+.not_logged_header .participe{
+  text-align: left;
+}
+.not_logged_header .input, .tel {
   text-align: center;
   line-height: 40px;
 }
@@ -210,7 +210,11 @@ h3{
 }
 .crowdcrowding .progress{
   width: 90%;
-  margin: 0 auto;
+  margin: 20px auto;
+  line-height: 35px;
+  height: 35px;
+  color: #666;
+  font-weight: bold;
 }
 .plan a{
   text-align: center;
@@ -252,6 +256,9 @@ h3{
 .not_logged_header a {
   color: white;
   padding: 0 15px;
+}
+.not_logged_header a:last-child {
+  padding: 0;
 }
 .not_logged_header a:hover {
   text-decoration: none;
@@ -366,18 +373,21 @@ footer[role="contentinfo"]{
 /* Poll */
 .mc_embed_signup{
   position: relative;
-  margin-right: 5px;
 }
 
 .next-courses{
-  margin: 15px 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.next-courses h4{
+  padding-left: 20px;
+  text-align: center;
 }
 .next-course{
   border-radius: 5px;
   background-color: rgba(220, 220, 220, 0.4);
   position: relative;
   box-shadow: 0 0 6px #DDD;
-  border: dashed 1px #CCC;
 }
 .next-course .img{
   float: left;
