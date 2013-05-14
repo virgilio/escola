@@ -89,7 +89,7 @@ $(document).ready(function() {
   });
 
 
-  $(".next-course .subscribe").click(function(){
+  $(".next-course .subscribe, .premium .subscribe").click(function(){
     $(".next-courses form").slideUp('fast');
     $(".next-courses form").find('.mce_tmp_error_msg, div.mce_inline_error, label.error').remove();
     $(".next-courses form").find('.mce-responses .response').hide();
