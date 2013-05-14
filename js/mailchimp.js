@@ -155,8 +155,8 @@ var fnames = new Array();
       }
       try {
         if (index == -1) {
-          thisForm.find('.mce-' + resp.result + '-response').show().delay(5000).slideUp();;
-          thisForm.find('.mce-' + resp.result + '-response').html(msg).delay(5000).slideUp();;
+          thisForm.find('.mce-' + resp.result + '-response').show().delay(5000).slideUp();
+          thisForm.find('.mce-' + resp.result + '-response').html(msg).delay(5000).slideUp();
         } else {
           err_id = 'mce_tmp_error_msg';
           html = '<div class="' + err_id + '" style="' + err_style + '"> ' + msg + '</div>';

@@ -88,4 +88,7 @@ $(document).ready(function() {
     $(this).closest("form").find('.mce-responses .response').hide();
   });
 
+  $('.sobre-assinatura').tooltip({
+    placement: 'top'
+  });
 });
