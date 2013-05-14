@@ -10,7 +10,9 @@
   margin: 0 auto;
   padding_bottom: 60px;
 }
-
+.label{
+  cursor: default;
+}
 h2,h3, h4{
   font-family: 'Bitter', serif;
 }
@@ -60,7 +62,7 @@ h3{
   text-align: center;
 }
 #parceiros img{
-  width: 80%;
+  width: 60%;
 }
 #parceiros ul{
   list-style: none;
@@ -75,7 +77,7 @@ h3{
   color: #444;
 }
 #parceiros ul li a:hover{
-  color: #f69220;
+  /*color: #f69220;*/
 }
 #parceiros ul li a label{
   background-color: #e5e5e5;
@@ -85,8 +87,10 @@ h3{
   border-top: 2px solid #aaa;
 }
 #parceiros ul li a label:hover, #parceiros ul li a:hover label{
-  background: #fff;
+  border-top: 2px solid #f69220;
+  border-bottom: 2px solid #f69220;
 }
+
 /* Fim Parceiros */
 .profiles {
   height: 450px;
@@ -194,6 +198,13 @@ h3{
   background-color: rgba(256,256,256,0.4);
   padding: 10px;
   text-align: center;
+}
+.crowdcrowding p{
+  text-align: left;
+}
+.crowdcrowding .progress{
+  width: 90%;
+  margin: 0 auto;
 }
 .plan a{
   text-align: center;
@@ -310,12 +321,12 @@ footer[role="contentinfo"]{
   text-align: center;
   padding: 8px 0 0;
 }
-.social li{
+/*.social li{
   height: 32px;
   width: 32px;
   overflow: hidden;
   margin: 0;
-}
+}*/
 
 .fb, .ln, .tw {
   background-image: url('../img/social.png');
