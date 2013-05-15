@@ -99,14 +99,13 @@
         <div id="content">              
           <div class="about_container container">
             <div class="row escola">
-              <div class="span4">
+              <div class="span2 offset2">
                 <img src="img/logo.png" />
               </div>
               <div class="span8">
-                <p>Na escola mupi, unimos nossas duas maiores paixões: tecnologia e educação. 
-                  Criamos uma escola de <strong>tecnologia criativa</strong> que pode ser acessada de qualquer lugar. 
-                  E o melhor, 100% em português  =) </p>           
-                  <iframe class="pull-right" src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmupi.br&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=trebuchet+ms&amp;colorscheme=light&amp;action=like&amp;height=35&amp;appId=292772274170801" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowtransparency="true"></iframe>
+                <h1>escola online de Tecnologia Criativa</h1> 
+                <span>aprenda com projetos reais</span>          
+                  <iframe class="pull-right" src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmupi.br&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=trebuchet+ms&amp;colorscheme=light&amp;action=like&amp;height=35&amp;appId=292772274170801" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:35px;" allowtransparency="true"></iframe>
 
                 </div>
               </div>
@@ -114,19 +113,19 @@
 
             <div id="participe" class="div_about">          
               <div class="container">
-                <div class="row progress-container">
+                <!-- <div class="row progress-container">
                     <h3>Matricule-se e faça acontecer!</h3>
                     <p>Precisamos de <strong>225 alunos</strong> pré-matriculados até dia <strong>26/05</strong> para abrir o curso de Web Design no dia 27/05!</p>
                     <div class="progress">
                       <div class="bar bar-success" style="width: 0%;"></div>
                       <span class="student_counter">0/225 alunos matriculados</span>
                     </div>
-                </div>
+                </div> -->
                 <div class="row">
-                  <div class="span6">
+                  <div class="span7">
                     <ul class="plans clearfix">
                       <li class="plan">
-                        <h3>Faça nosso curso de Web Design!</h3>
+                        <h3>Inicie sua carreira como Web Designer!</h3>
                         <ul>
                           <li>
                             <i class="icon-ok"></i> Aprenda a desenvolver websites com projetos reais
@@ -135,7 +134,10 @@
                             <i class="icon-ok"></i> Complemente sua formação
                           </li>
                           <li>
-                            <i class="icon-ok"></i> Aprimore seu portfolio com os projetos realizados durante o curso
+                            <i class="icon-ok"></i> Aprimore seu portfolio
+                          </li>
+                          <li>
+                            <i class="icon-ok"></i> Ingresse no mercado
                           </li>
                         </ul>
                         <ul class="badges-logos">
@@ -159,27 +161,32 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="span6">
+                  <div class="span5">
                     <div class="crowdcrowding">
-                      <h4>Plano Básico: R$39,90/mês </h4>
-                      <p>
+                      <h4>Início das aulas dia 27/05</h4>
+                      <h3>Matricule-se agora e garanta já sua vaga!</h3>
+                      <!-- <strong>Plano Mensal</strong> -->
+                      <span class="plan_pricing">R$39,90/mês</span>
+                      <!-- <p>
                         Nesse plano você tem acesso a todo o conteúdo do site, incluindo videoaulas, exercícios e projetos <i class="icon-info-sign sobre-assinatura" title="Pedidos de cancelamento devem ser feitos pelo email contato@mupi.me ou pelo telefone 019 3289 3914" data-toggle="tooltip"></i>
-                      </p>
+                      </p> -->
                       <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
                       <form target="pagseguro" action="https://pagseguro.uol.com.br/v2/pre-approvals/request.html" method="post">
                         <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
                         <input type="hidden" name="code" value="907392419E9EAB62241C7F952FB00521" />
-                        <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/assinaturas/209x48-assinar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                        <!-- <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/assinaturas/209x48-assinar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+ -->  
+                        <input type="submit" id="btn_pagseguro" value="Assinar" name="submit"/>
                       </form>
-                      <p>Para mais formas de pagamento envie um email para contato@mupi.me</p>
+                      <p>Para outras formas de pagamento envie um email para contato@mupi.me</p>
                       <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-                      <h4>Plano Completo: R$49,90/mês <label class="label">EM BREVE!</label></h4>
+                      <!-- <h4>Plano Completo: R$49,90/mês <label class="label">EM BREVE!</label></h4>
                       <p>
                         Nesse plano além do acesso a todo o conteúdo, oferecemos suporte pedagógico individual, feedback personalizado e consultoria <i class="icon-info-sign sobre-assinatura" data-toggle="tooltip" title="Pedidos de cancelamento devem ser feitos pelo email contato@mupi.me ou pelo telefone 019 3289 3914"></i>
-                      </p>
+                      </p> -->
                       
                       <!-- Mailchimp subscription button for a given course -->
-                      <div class="mc_embed_signup premium">
+                      <!-- <div class="mc_embed_signup premium">
                         <form action="http://mupi.us6.list-manage.com/subscribe/post?u=019b0afa5dc43eb80d4496614&amp;id=5819f1910e" post-json="http://mupi.us6.list-manage.com/subscribe/post-json?u=019b0afa5dc43eb80d4496614&amp;id=5819f1910e&c=?" method="post" class="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form validate clearfix" target="_blank" novalidate>
                           <div class="mc-field-group clearfix">
                             <input type="email" value="" name="EMAIL" placeholder="Seu e-mail" class="required email" />
@@ -191,7 +198,7 @@
                             <div class="response mce-success-response" style="display:none"></div>
                           </div>
                         </form>
-                      </div>
+                      </div> -->
                     </div>  
                   </div>
                 </div>

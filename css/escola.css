@@ -16,7 +16,15 @@ h3{
   text-align: center;
 }
 
+/* Header */
 
+.escola h1{
+  font-size: 24px;
+  margin: 0;
+}
+.escola span{
+
+}
 /* Plans */
 .plans{
   list-style: none;
@@ -46,7 +54,8 @@ h3{
   text-align: center;
 }
 .badges-logos{
-  margin: 0;
+  margin: 0 5%;
+  width: 100%;
 }
 .plan .badges-logos li{
   line-height: 5em;
@@ -378,7 +387,19 @@ footer[role="contentinfo"]{
 }
 
 
-
+/* Pagseguro */
+#btn_pagseguro{
+  background-color: #77cc6d;
+  font-size: 17px;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 12px;
+  text-shadow: 0 1px 0 #53994b;
+  min-width: 125px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 4px solid #53994b;
+  border-right: 4px solid #53994b;
+}
 
 /* Poll */
 .mc_embed_signup{
@@ -401,7 +422,7 @@ footer[role="contentinfo"]{
   background-color: rgba(220, 220, 220, 0.4);
   position: relative;
   box-shadow: 0 0 6px #DDD;
-  padding: 8px;
+  padding: 8px 8px 0 8px;
 }
 .next-course .img{
   width: 60px;
@@ -414,20 +435,29 @@ footer[role="contentinfo"]{
 
 .next-course .actions{
   text-align: center;
-  margin: 2px 0 6px;
+  margin: 2px 0 6px -8px;
+  width: 220px;
 }
 
 .next-course .btn{
   font-size: 1em;
-  width: 60%;
+  width: 100%;
   padding: 4px 0;
+  border: none;
+  border: 0 0 5px 5px;
 }
 .next-course .btn.info{
   margin-right: 90px;
 }
 
-.mc-field-group{
-
+.plan_pricing{
+  display: block;
+  font-size: 37pt;
+  line-height: 40pt;
+  color: #53994b;
+  text-shadow: 2px 2px 0px #fff;
+  font-family: 'Noto Sans';
+  margin-bottom: 10px;
 }
 
 .mc_embed_signup form{
