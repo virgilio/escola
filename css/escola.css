@@ -212,7 +212,7 @@ h3{
 }
 .share-buttons{
   text-align:center;
-  margin-top: 30px;
+  margin: 15px 0 ;
 }
 .share-buttons a{
   display: inline-block;
