@@ -36,7 +36,15 @@ h3{
   text-align: center;
 }
 
+/* Header */
 
+.escola h1{
+  font-size: 24px;
+  margin: 0;
+}
+.escola span{
+
+}
 /* Plans */
 .plans{
   list-style: none;
@@ -66,7 +74,8 @@ h3{
   text-align: center;
 }
 .badges-logos{
-  margin: 0;
+  margin: 0 5%;
+  width: 100%;
 }
 .plan .badges-logos li{
   line-height: 5em;
@@ -400,7 +409,19 @@ footer[role="contentinfo"]{
 }
 
 
-
+/* Pagseguro */
+#btn_pagseguro{
+  background-color: #77cc6d;
+  font-size: 17px;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 12px;
+  text-shadow: 0 1px 0 #53994b;
+  min-width: 125px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 4px solid #53994b;
+  border-right: 4px solid #53994b;
+}
 
 /* Poll */
 .mc_embed_signup{
@@ -436,81 +457,38 @@ footer[role="contentinfo"]{
 
 .next-course .actions{
   text-align: center;
-  margin: 2px 0 6px;
 }
 
 .next-course .btn{
   font-size: 1em;
-  width: 60%;
-  padding: 4px 0;
-}
-.next-course .btn.info{
-  margin-right: 90px;
+  width: 20%;
+  border: none;
 }
 
-.mc-field-group{
-
+.plan_pricing{
+  display: block;
+  font-size: 37pt;
+  line-height: 40pt;
+  color: #53994b;
+  text-shadow: 2px 2px 0px #fff;
+  font-family: 'Noto Sans';
+  margin-bottom: 10px;
 }
 
 .mc_embed_signup form{
-  display: none;
-  position: absolute;
-  width: 110%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-  left: -5%;
-  height: 50px;
-}
-.mc_embed_signup.premium form{
-  display: block;
-  background: none;
-  position: static;
-  height: auto;
-  width: auto;
-  margin: 0;
-}
-
-.mc_embed_signup form i{
-  position: absolute;
-  right: 6px;
-  top: 14px;
-  font-size: 22px;
-  color:rgba(220, 90, 100, 1);
-  text-shadow: 0px 0px 2px #a00;
-  cursor: pointer;
-}
-.mc_embed_signup.premium form i{
-  display: none;
+  margin-bottom: 0;
 }
 
 .mc_embed_signup input[type="email"]{
   font-size: 1em;
-  position: absolute;
-  top: 10px;
-  left: 5px;
-  width: 55%;
-}
-
-.mc_embed_signup.premium input[type="email"]{
-  font-size: 1em;
-  top: 0px;
-  width: auto;
-  position: static;
-  left: 0;
+  width: 70%;
   margin: 0;
 }
 
 .mc_embed_signup input[type="submit"] {
   font-size: 1em;
-  right: 30px;
-  top: 10px;
-  position: absolute;
   border-radius: 5px;
-}
-.mc_embed_signup.premium input[type="submit"]{
-  position: static;
-  top: 0px;
-  right: auto;
+  width: 20%;
 }
 
 .mce_inline_error, label.error{
