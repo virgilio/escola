@@ -1,10 +1,30 @@
 /* *{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } */
+html, body{
+  height: 100%;
+}
 
  body{
   background: url('../img/first_aid_kit.png') 0 0 repeat !important;
-  padding-top:40px;
   font-family: 'Noto Sans', sans-serif;
 }
+
+/*Opera Fix for sticky footer*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+#wrapper {
+  min-height: 100%;
+}
+#main {
+  overflow:auto;
+  padding-bottom: 63px;
+  padding-top:40px;
+}  /* must be same height as the footer */
+
 
 .label{
   cursor: default;
@@ -331,6 +351,8 @@ footer[role="contentinfo"]{
   clear:both;
   position:relative;
   margin: 0;
+  height: 63px;
+  margin-top: -63px;
 }
 .social{
   text-align: center;
