@@ -3,14 +3,9 @@
  body{
   background: url('../img/first_aid_kit.png') 0 0 repeat !important;
   padding-top:40px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.page_container {
-  width: 1000px;
-  margin: 0 auto;
-  padding_bottom: 60px;
-  background-color: red;
-}
 .label{
   cursor: default;
 }
@@ -50,9 +45,12 @@ h3{
 .plan form{
   text-align: center;
 }
+.badges-logos{
+  margin: 0;
+}
 .plan .badges-logos li{
   line-height: 5em;
-  margin: 0 5px;
+  width: 30%;
 }
 
 .tech-badge{
@@ -208,13 +206,17 @@ h3{
 .crowdcrowding p{
   text-align: left;
 }
-.crowdcrowding .progress{
-  width: 90%;
-  margin: 20px auto;
+#participe .progress{
+  width: 50%;
+  margin: 15px auto;
   line-height: 35px;
   height: 35px;
   color: #666;
   font-weight: bold;
+  text-align: center;
+}
+.progress-container{
+  text-align: center;
 }
 .plan a{
   text-align: center;
@@ -384,11 +386,14 @@ footer[role="contentinfo"]{
 }
 
 .next-courses{
-  margin-top: 20px;
   margin-bottom: 10px;
+  background: #f5f5f5;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 .next-courses h4{
   padding-left: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .next-course{
@@ -396,18 +401,15 @@ footer[role="contentinfo"]{
   background-color: rgba(220, 220, 220, 0.4);
   position: relative;
   box-shadow: 0 0 6px #DDD;
+  padding: 8px;
 }
 .next-course .img{
-  float: left;
-  width: 80px;
-  height: 80px;
-}
-.next-course img{
-  max-width: 80px;
-  max-height: 80px;
+  width: 60px;
+  height: 60px;
 }
 .next-course .descr{
-  margin-left: 90px;
+  margin-left: 65px;
+  min-height: 80px;
 }
 
 .next-course .actions{
