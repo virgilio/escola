@@ -226,7 +226,7 @@ h3{
 }
 
 .crowdcrowding{
-  background-color: rgba(256,256,256,0.4);
+    /*background-color: rgba(256,256,256,0.4);*/
   padding: 10px;
   text-align: center;
 }
