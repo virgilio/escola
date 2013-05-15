@@ -47,40 +47,38 @@ h3{
 }
 /* Plans */
 .plans{
-  list-style: none;
-  /*border-bottom: 1px #323 dashed;*/
-  padding-bottom: 15px;
-  margin: 0;
-  background: rgba(250, 250, 250, 0.5);
+ border-radius: 10px;
+ vertical-align: middle;
+ background: rgba(250, 250, 250, 0.5);
 }
-.plan{
-  padding: 0px 10px;
-  margin: 0 10px;
-  border-radius: 10px;
-  vertical-align: middle;
+
+.plans i{
+ font-size: 20px;
+ background: none;
 }
-.plan i{
-  font-size: 20px;
-  background: none;
+.plans ul{
+ list-style: none;
 }
-.plan ul{
-  list-style: none;
+.plans ul li{
+ line-height: 2em;
+ font-size: 1.2em;
 }
-.plan ul li{
-  line-height: 2em;
-  font-size: 1.2em;
-}
-.plan form{
-  text-align: center;
+.plans form{
+ text-align: center;
 }
 .badges-logos{
-  margin: 0 5%;
-  width: 100%;
+ margin: 0 5%;
+ width: 100%;
 }
-.plan .badges-logos li{
-  line-height: 5em;
-  width: 30%;
+.plans .badges-logos li{
+ line-height: 5em;
+ width: 30%;
 }
+
+.center{
+  text-align: center;
+}
+
 
 .tech-badge{
   text-align: center;
@@ -465,16 +463,18 @@ footer[role="contentinfo"]{
   border: none;
 }
 
-.plan_pricing{
-  display: block;
-  font-size: 37pt;
-  line-height: 40pt;
-  color: #53994b;
-  text-shadow: 2px 2px 0px #fff;
-  font-family: 'Noto Sans';
-  margin-bottom: 10px;
+.full_pricing{
+ text-decoration: line-through;
+ font-size: 14pt
 }
-
+.plan_pricing{
+ display: block;
+ font-size: 37pt;
+ line-height: 40pt;
+ color: #53994b;
+ text-shadow: 2px 2px 0px #fff;
+ font-family: 'Noto Sans';
+}
 .mc_embed_signup form{
   margin-bottom: 0;
 }
