@@ -36,31 +36,19 @@
         <![endif]-->
 
     <script type="text/javascript">
+
       var _gaq = _gaq || [];
-      
-      _gaq.push(
-      ['_setAccount', 'UA-35125468-1']
-      // DEV -
-      , ['_setDomainName', 'none']
-      // PROD
-      // , ['_setDomainName', 'mupi.me']
-      , ['_trackPageview']
-      , ['_setCustomVar', 1, 'logged-in' , 'false', 2]
-      , ['_setCustomVar', 2, 'member'    , 'false', 1]
-      , ['_setCustomVar', 3, 'cohort'    , '0', 1]
-      , ['_setCustomVar', 4, 'email'     , '0', 1]
-      );
-      
+      _gaq.push(['_setAccount', 'UA-35125468-1']);
+      _gaq.push(['_setDomainName', 'mupi.me']);
+      _gaq.push(['_trackPageview']);
+
       (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      // DEV
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/u/ga_debug.js';
-      // PROD
-      // ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/u/ga.js';
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    </script>
 
+    </script>
 
     <script src="http://mupi.me/assets/javascripts/cohorts.js"></script>
     <script type="text/javascript" src="js/mailchimp.js"></script>
