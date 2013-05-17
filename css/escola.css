@@ -520,3 +520,6 @@ footer[role="contentinfo"]{
   padding: 5px 0;
   z-index: 5000;
 }
+#ementa h3{
+  text-align: left;
+}
