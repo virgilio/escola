@@ -15,9 +15,7 @@
     <meta property="og:image" content="img/logo.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://escola.mupi.me/#participe" />
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le scripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -27,6 +25,7 @@
     <!-- Le styles -->
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'/>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css' />
@@ -74,12 +73,10 @@
     <div id="wrapper">
       <div id="main">
         <div class="navbar mupi-navbar navbar-fixed-top not_logged_header">
-          <div class="container">
-            <div class="row">
+          <div class="container-fluid">
               <div class="span2 participe">
                 <h4><a href="#participe">Matrícula</a></h4>
               </div>
-
               <div class="tel span3">
                 <div class="phone">
                   <a href="tel:+551932893914">
@@ -87,20 +84,17 @@
                   </a>
                 </div>
               </div>
-
               <div class="span5 offset2 menu">            
                 <a style="border-right: 1px solid white;" href="#parceiros">Nossos parceiros</a>
                 <a href="#sobre">Quem Somos</a>
                 <a class="logo" href="#participe" alt="Mupi"></a>
               </div>
-
-            </div>
           </div>
         </div>
         <div id="content">              
-          <div class="about_container container">
-            <div class="row escola">
-              <div class="span2 offset2">
+          <div class="about_container container-fluid">
+            <div class="row-fluid escola">
+              <div class="span2 offset1">
                 <img src="img/logo.png" />
               </div>
               <div class="span8">
@@ -112,47 +106,48 @@
             </div>
           </div>
 
-          <div id="participe" class="div_about">          
-            <div class="container">
-              <div class="row">
+          <div id="participe" class="div_about container-fluid"> 
+              <div class="row-fluid">
                 <div class="span7 plans">
-                  <h3>Inicie sua carreira como Web Designer!</h3>
-                  <ul>
-                    <li>
-                      <i class="icon-ok"></i> Aprenda a desenvolver websites com projetos reais
-                    </li>
-                    <li>
-                      <i class="icon-ok"></i> Complemente sua formação
-                    </li>
-                    <li>
-                      <i class="icon-ok"></i> Aprimore seu portfolio
-                    </li>
-                    <li>
-                      <i class="icon-ok"></i> Ingresse no mercado
-                    </li>
-                  </ul>
-                  <ul class="badges-logos">
-                    <h5>Você vai aprender:</h5>
-                    <li class="pull-left tech-badge">
-                      <a href="http://www.w3.org/html/logo/" target="blank">
-                        <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics" />
-                      </a>
-                    </li>
-                    <li class="tech-badge pull-left">
-                      <a href="http://jquery.org" target="blank">
-                        <img src="img/jquery.png" alt="JQuery" title="Jquery" />
-                      </a>
-                    </li>
-                    <li class="tech-badge pull-left">
-                      <a href="https://github.com/" target="blank">
-                        <img src="img/github.png" alt="GitHub" title="GitHub" />
-                      </a>
-                    </li>
-                  </ul>
-                  <p class="center"><strong>Início das aulas em 27/05</strong></p>
+                  <div class="row-fluid">
+                    <h3>Inicie sua carreira como Web Designer!</h3>
+                    <ul>
+                      <li>
+                        <i class="icon-ok"></i> Aprenda a desenvolver websites com projetos reais
+                      </li>
+                      <li>
+                        <i class="icon-ok"></i> Complemente sua formação
+                      </li>
+                      <li>
+                        <i class="icon-ok"></i> Aprimore seu portfolio
+                      </li>
+                      <li>
+                        <i class="icon-ok"></i> Ingresse no mercado
+                      </li>
+                    </ul>
+                    <ul class="badges-logos">
+                      <h5>Você vai aprender:</h5>
+                      <li class="pull-left tech-badge">
+                        <a href="http://www.w3.org/html/logo/" target="blank">
+                          <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics" />
+                        </a>
+                      </li>
+                      <li class="tech-badge pull-left">
+                        <a href="http://jquery.org" target="blank">
+                          <img src="img/jquery.png" alt="JQuery" title="Jquery" />
+                        </a>
+                      </li>
+                      <li class="tech-badge pull-left">
+                        <a href="https://github.com/" target="blank">
+                          <img src="img/github.png" alt="GitHub" title="GitHub" />
+                        </a>
+                      </li>
+                    </ul>
+                    <p class="center"><strong>Início das aulas em 27/05</strong></p>
+                  </div>
                 </div>
                 <div class="span5 plans">
-                  <div class="crowdcrowding">
+                  <div class="crowdcrowding row-fluid">
                     <h3>Matricule-se agora e garanta sua vaga</h3>
                     <span>de <span class="full_pricing">R$39,90/mês</span> por apenas</span>
                     <span class="plan_pricing">R$19,90/mês</span>
@@ -168,12 +163,11 @@
                   </div>
                 </div>
               </div>
-            </div>
           </div>
           <div class="next-courses">
-            <div class="container">
-              <div class="row">
-                <h4>Escolha nossos próximos cursos!</h4>
+            <h4>Escolha nossos próximos cursos!</h4>
+            <div class="container-fluid">
+              <div class="row-fluid">
                 <!-- Mailchimp subscription button for a given course -->
                 <div class="mc_embed_signup pull-left span3">
                   <div class="next-course">
@@ -291,92 +285,97 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>  
             </div>
           </div>
 
-          <div class="container">
-            <div class="row">
-
+          <div class="container-fluid">
+            <div class="row-fluid">
               <div class="span9">
-                <h3>Ajude a divulgar o Mupi e as idéias que compartilhamos!</h3>
-                <p>A Escola Mupi apoia uma iniciativa que vem tomando grande espaço no mundo inteiro 
-                  sobre a importância da programação no desenvolvimento pessoal.
-                  O nosso maior objetivo é promover educação de qualidade acessível a todos!</p>
-                <p>Nos EUA, um grande movimento vem se formando  em 
-                  prol da adição de programação no currículo escolar! Confira em 
-                  <a href="http://code.org" class="label label-info">code.org</a>
-                </p>
-                <p class="share-buttons">
-                  <a class="btn btn-facebook btn-large" 
-                     href="https://www.facebook.com/sharer.php?u=http://escola.mupi.me" target="_blank">
-                    <i class="icon-white icon-facebook"></i>
-                    Compartilhe no Facebook 
-                  </a>
-                  <a href="https://twitter.com/share?text=Conheça a Escola Mupi!" target="_blank" class="popup btn btn-default btn-large" data-lang="en">
-                    <i class="icon-white icon-twitter"></i>
-                    Compartilhe no Twitter
-                  </a>
-                </p>
+                <div class="row-fluid">
+                  <h3>Ajude a divulgar o Mupi e as idéias que compartilhamos!</h3>
+                  <p>A Escola Mupi apoia uma iniciativa que vem tomando grande espaço no mundo inteiro 
+                    sobre a importância da programação no desenvolvimento pessoal.
+                    O nosso maior objetivo é promover educação de qualidade acessível a todos!</p>
+                  <p>Nos EUA, um grande movimento vem se formando  em 
+                    prol da adição de programação no currículo escolar! Confira em 
+                    <a href="http://code.org" class="label label-info">code.org</a>
+                  </p>
+                  <p class="share-buttons">
+                    <a class="btn btn-facebook btn-large" 
+                       href="https://www.facebook.com/sharer.php?u=http://escola.mupi.me" target="_blank">
+                      <i class="icon-white icon-facebook"></i>
+                      Compartilhe no Facebook 
+                    </a>
+                    <a href="https://twitter.com/share?text=Conheça a Escola Mupi!" target="_blank" class="popup btn btn-default btn-large" data-lang="en">
+                      <i class="icon-white icon-twitter"></i>
+                      Compartilhe no Twitter
+                    </a>
+                  </p>
+                </div>
               </div>
               <div id="parceiros" class="span3">
-                <h3>Nossos parceiros</h3>
-                <ul>
-                  <li class="pull-left">
-                    <a href="http://bit.ly/17pEMRr" target="blank">
-                      <img src="img/logo_atlas.png" />
-                      <label>Alunos Mupi tem <strong>25% de desconto</strong> nos cursos da Atlas Media Lab!</label>
-                    </a>
-                  </li>
-                </ul>
+                <div class="row-fluid">
+                  <h3>Nossos parceiros</h3>
+                  <ul>
+                    <li>
+                      <a href="http://bit.ly/17pEMRr" target="blank">
+                        <img src="img/logo_atlas.png" />
+                        <label>Alunos Mupi tem <strong>25% de desconto</strong> nos cursos da Atlas Media Lab!</label>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="div_about">          
-            <div id="sobre" class="clearfix about_container container">
-              <div class="row">
+          <div class="div_about .hidden-phone">          
+            <div id="sobre" class="clearfix about_container container-fluid">
+              <div class="row-fluid">
                 <div class="span12">
                   <h2>Quem somos</h2>
                 </div>
               </div>
-              <div class="row">
-                <div class="span3">
-                  <div class="profile_img">
-                    <img src="img/ana.jpg" />
+              <div class="container-fluid">
+                <div class="row-fluid">
+                  <div class="span3">
+                    <div class="profile_img">
+                      <img src="img/ana.jpg" />
+                    </div>
+                    <h5>Ana Rute Mendes</h5>
+                    <p>Formada em midialogia pela Unicamp, é apaixonada pela web e tudo que ela pode proporcionar. Acredita no Mupi como uma forma de unir pessoas aravés da troca de conhecimento.</p>
                   </div>
-                  <h5>Ana Rute Mendes</h5>
-                  <p>Formada em midialogia pela Unicamp, é apaixonada pela web e tudo que ela pode proporcionar. Acredita no Mupi como uma forma de unir pessoas aravés da troca de conhecimento.</p>
-                </div>
-                <div class="span3">
-                  <div class="profile_img">
-                    <img src="img/banduk.jpg" />
+                  <div class="span3">
+                    <div class="profile_img">
+                      <img src="img/banduk.jpg" />
+                    </div>
+                    <h5>Mauricio Banduk</h5>
+                    <p>Engenheiro de Computação, apaixonado por web e todas as tecnologias ligadas à ela. Colaboração, novidade e experiência são palavras que o guiam para o desenvolvimento.</p>
                   </div>
-                  <h5>Mauricio Banduk</h5>
-                  <p>Engenheiro de Computação, apaixonado por web e todas as tecnologias ligadas à ela. Colaboração, novidade e experiência são palavras que o guiam para o desenvolvimento.</p>
-                </div>
-                <div class="span3">
-                  <div class="profile_img">
-                    <img src="img/paulets.jpg" />
+                  <div class="span3">
+                    <div class="profile_img">
+                      <img src="img/paulets.jpg" />
+                    </div>
+                    <h5>Paula Furtado</h5>
+                    <p>Formada em Letras, pesquisadora em educação e tecnologia. Louca por literatura, música popular brasileira, internet e pessoas movidas pela paixão de acrescentar algo no mundo!</p>
                   </div>
-                  <h5>Paula Furtado</h5>
-                  <p>Formada em Letras, pesquisadora em educação e tecnologia. Louca por literatura, música popular brasileira, internet e pessoas movidas pela paixão de acrescentar algo no mundo!</p>
-                </div>
-                <div class="span3">
-                  <div class="profile_img">
-                    <img src="img/vir.jpg" />
+                  <div class="span3">
+                    <div class="profile_img">
+                      <img src="img/vir.jpg" />
+                    </div>
+                    <h5>Virgilio Santos</h5>
+                    <p>Formado em Computação pela Unicamp e desenvolvedor de software. Tem um interesse muito grande por Tecnologia e Educação e está sempre envolvido em projetos nessa área, como o Mupi!</p>
                   </div>
-                  <h5>Virgilio Santos</h5>
-                  <p>Formado em Computação pela Unicamp e desenvolvedor de software. Tem um interesse muito grande por Tecnologia e Educação e está sempre envolvido em projetos nessa área, como o Mupi!</p>
                 </div>
-              </div>
+              </div>  
             </div>
           </div>
         </div>
       </div>
     </div>
     <footer role="contentinfo">
-      <div class="container">
-        <div class="social row">
+      <div class="container-fluid">
+        <div class="social row-fluid">
           <ul class="span12 social inline">
             <li><a href="http://www.facebook.com/mupi.br" target="_blank" title="facebook" class="fb"></a></li>
             <li><a href="http://www.linkedin.com/company/mupi" target="_blank" title="linkedin" class="ln"></a></li>
