@@ -1,4 +1,4 @@
-/* *{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } */
+*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 html, body{
   height: 100%;
 }
@@ -21,7 +21,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 }
 #main {
   overflow:auto;
-  padding-bottom: 63px;
+  padding-bottom: 64px;
   padding-top:40px;
 }  /* must be same height as the footer */
 
@@ -40,7 +40,7 @@ h3{
 
 .escola h1{
   font-size: 24px;
-  margin: 0;
+  margin: 0 0 10px;
 }
 .escola span{
 
@@ -50,6 +50,9 @@ h3{
  border-radius: 10px;
  vertical-align: middle;
  background: rgba(250, 250, 250, 0.5);
+ padding: 10px;
+ text-align: center;
+ margin-top:10px;
 }
 
 .plans i{
@@ -73,6 +76,10 @@ h3{
 .plans .badges-logos li{
  line-height: 5em;
  width: 30%;
+}
+
+.plans .valores-curso{
+  text-align: left;
 }
 
 .center{
@@ -128,12 +135,8 @@ h3{
   margin: 0 5px 0 0;
 }
 
-.mupi-navbar {
-  height: 40px;
-}
-.not_logged_header .menu{
-  line-height: 40px;
-}
+
+
 .logo {
   margin-top: 3px;
 }
@@ -151,7 +154,7 @@ h3{
 }
 
 #participe{
-  padding: 25px 0;
+  padding: 15px 0;
   /*height: auto;*/
 }
 
@@ -228,7 +231,7 @@ h3{
 
 .crowdcrowding{
     /*background-color: rgba(256,256,256,0.4);*/
-  padding: 10px;
+  /*padding: 10px;*/
   text-align: center;
 }
 .crowdcrowding p{
@@ -271,17 +274,17 @@ h3{
   margin-left: 10px;
   margin-top: 5px;
 }
+
 .mupi-navbar {
   background-color: #332213;
   box-shadow: 0 0 2px 2px #444;
   height: 40px;
 }
-#content {
-  padding-top: 10px;
-}
+
 .not_logged_header {
-  text-align: right;
+  text-align: center;
   line-height: 40px;
+  color: #fff;
 }
 .not_logged_header a {
   color: white;
@@ -294,12 +297,14 @@ h3{
   text-decoration: none;
   color: #08C;
 }
-#login_header_but {
-  border-right: 1px solid white;
-  border-left: 1px solid white;
+
+.mupi-navbar h2 {
+  font-size: 1.8em;
+  line-height: 100%;
 }
-.alert {
-  margin-top: 40px !important;
+
+#content {
+  padding-top: 10px;
 }
 
 
@@ -359,8 +364,8 @@ footer[role="contentinfo"]{
   clear:both;
   position:relative;
   margin: 0;
-  height: 63px;
-  margin-top: -63px;
+  height: 64px;
+  margin-top: -64px;
 }
 .social{
   text-align: center;
@@ -369,17 +374,11 @@ footer[role="contentinfo"]{
 }
 
 .mixpan{
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 15px;
+  text-align: center;
 }
-/*.social li{
-  height: 32px;
-  width: 32px;
-  overflow: hidden;
-  margin: 0;
-}*/
+.mixpan img{
+  margin: 14px 0 ;
+}
 
 .fb, .ln, .tw {
   background-image: url('../img/social.png');
@@ -458,12 +457,6 @@ footer[role="contentinfo"]{
   text-align: center;
 }
 
-.next-course .btn{
-  font-size: 1em;
-  width: 20%;
-  border: none;
-}
-
 .full_pricing{
  text-decoration: line-through;
  font-size: 14pt
@@ -484,12 +477,14 @@ footer[role="contentinfo"]{
   font-size: 1em;
   width: 70%;
   margin: 0;
+  height: 100%
 }
 
 .mc_embed_signup input[type="submit"] {
   font-size: 1em;
   border-radius: 5px;
-  width: 20%;
+  width: 25%;
+  height: 100%
 }
 
 .mce_inline_error, label.error{
@@ -522,12 +517,16 @@ footer[role="contentinfo"]{
   z-index: 5000;
 }
 
+#ementa h3{
+  text-align: left;
+}
+
 
 .container-fluid{
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1000px;
 }
 
 .container-fluid > *{
-  margin: 0 auto;
+  padding: 0 20px;
 }

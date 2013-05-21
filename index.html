@@ -14,7 +14,7 @@
     <meta property="og:description" content="Uma escola online com foco em tecnologia em Português!" />
     <meta property="og:image" content="img/logo.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://escola.mupi.me/#participe" />
+    <meta property="og:url" content="http://escola.mupi.me" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le scripts -->
@@ -62,9 +62,6 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-
-
-    <script src="http://mupi.me/assets/javascripts/cohorts.js"></script>
     <script type="text/javascript" src="js/mailchimp.js"></script>
     <link rel="stylesheet" href="css/escola.css" type="text/css" media="screen"/>
 
@@ -74,7 +71,8 @@
       <div id="main">
         <div class="navbar mupi-navbar navbar-fixed-top not_logged_header">
           <div class="container-fluid">
-              <div class="span2 participe">
+            <div class="row-fluid">
+              <div class="span2 participe visible-desktop">
                 <h4><a href="#participe">Matrícula</a></h4>
               </div>
               <div class="tel span3">
@@ -82,9 +80,10 @@
                   <a href="tel:+551932893914">
                     <i class="icon-phone "></i> +55 (19)32893914
                   </a>
+                  <a class="logo hidden-desktop" href="#participe" alt="Mupi"></a>
                 </div>
               </div>
-              <div class="span5 offset2 menu">            
+              <div class="span5 offset2 menu visible-desktop">    
                 <a style="border-right: 1px solid white;" href="#parceiros">Nossos parceiros</a>
                 <a href="#sobre">Quem Somos</a>
                 <a class="logo" href="#participe" alt="Mupi"></a>
@@ -106,12 +105,13 @@
             </div>
           </div>
 
-          <div id="participe" class="div_about container-fluid"> 
+          <div id="participe" class="div_about"> 
+            <div class="container-fluid">
               <div class="row-fluid">
                 <div class="span7 plans">
                   <div class="row-fluid">
-                    <h3>Inicie sua carreira como Web Designer!</h3>
-                    <ul>
+                    <h3><a href="ementa.html">Inicie sua carreira como Web Designer!</a></h3>
+                    <ul class="valores-curso">
                       <li>
                         <i class="icon-ok"></i> Aprenda a desenvolver websites com projetos reais
                       </li>
@@ -125,8 +125,9 @@
                         <i class="icon-ok"></i> Ingresse no mercado
                       </li>
                     </ul>
+
+                    <h5>Você vai aprender:</h5>
                     <ul class="badges-logos">
-                      <h5>Você vai aprender:</h5>
                       <li class="pull-left tech-badge">
                         <a href="http://www.w3.org/html/logo/" target="blank">
                           <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics" />
@@ -143,7 +144,7 @@
                         </a>
                       </li>
                     </ul>
-                    <p class="center"><strong>Início das aulas em 27/05</strong></p>
+                    <p class="center"><strong>Início das aulas em 27/05</strong>, <a href="ementa.html">Clique aqui para saber mais!</a></p>
                   </div>
                 </div>
                 <div class="span5 plans">
@@ -319,7 +320,7 @@
                   <h3>Nossos parceiros</h3>
                   <ul>
                     <li>
-                      <a href="http://bit.ly/17pEMRr" target="blank">
+                      <a href="http://bit.ly/10RNpN9" target="blank">
                         <img src="img/logo_atlas.png" />
                         <label>Alunos Mupi tem <strong>25% de desconto</strong> nos cursos da Atlas Media Lab!</label>
                       </a>
@@ -375,13 +376,29 @@
     </div>
     <footer role="contentinfo">
       <div class="container-fluid">
-        <div class="social row-fluid">
-          <ul class="span12 social inline">
-            <li><a href="http://www.facebook.com/mupi.br" target="_blank" title="facebook" class="fb"></a></li>
-            <li><a href="http://www.linkedin.com/company/mupi" target="_blank" title="linkedin" class="ln"></a></li>
-            <li><a href="https://twitter.com/mbideas" target="_blank" title="twitter" class="tw"></a></li>
-          </ul>
-          <a href="https://mixpanel.com/f/partner" class="mixpan pull-right"><img src="http://cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
+        <div class="row-fluid">
+          <div class="span8 offset2 social">
+            <ul class="social inline">
+              <li>
+                <a class="fb" href="http://www.facebook.com/mupi.br"
+                target="_blank" title="facebook"></a>
+              </li>
+
+              <li>
+                <a class="ln" href=
+                "http://www.linkedin.com/company/mupi" target="_blank"
+                title="linkedin"></a>
+              </li>
+
+              <li>
+                <a class="tw" href="https://twitter.com/mbideas"
+                target="_blank" title="twitter"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span2 mixpan visible-desktop">
+            <a href="https://mixpanel.com/f/partner"><img alt="Mobile Analytics" src="http://cdn.mxpnl.com/site_media/images/partner/badge_light.png"></a>
+          </div>
         </div>
       </div>
     </footer>
