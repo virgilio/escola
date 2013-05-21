@@ -6,13 +6,13 @@
     <!-- Le meta -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Uma escola online com foco em tecnologia em Português!" />
+    <meta name="description" content="A primeira escola online de tecnologia criativa do Brasil!" />
     <meta name="author" content="Matchbox Ideas" />
-
     <meta property="og:title" content="Mupi Escola!" />
-    <meta property="og:image" content="http://escola.mupi.me/img/imagine.jpg" />
-    <meta property="og:description" content="Uma escola online com foco em tecnologia em Português!" />
-    <meta property="og:image" content="img/logo.png" />
+    <meta property="og:image" content="http://escola.mupi.me/img/mupilogo.png" />
+    <meta property="og:image" content="http://escola.mupi.me/img/logoFB.jpg" />
+    <meta property="og:image" content="http://escola.mupi.me/img/logomupi.png" />
+    <meta property="og:description" content="A primeira escola online de tecnologia criativa do Brasil!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://escola.mupi.me" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,27 +38,15 @@
         <![endif]-->
 
     <script type="text/javascript">
+
       var _gaq = _gaq || [];
-      
-      _gaq.push(
-      ['_setAccount', 'UA-35125468-1']
-      // DEV -
-      , ['_setDomainName', 'none']
-      // PROD
-      // , ['_setDomainName', 'mupi.me']
-      , ['_trackPageview']
-      , ['_setCustomVar', 1, 'logged-in' , 'false', 2]
-      , ['_setCustomVar', 2, 'member'    , 'false', 1]
-      , ['_setCustomVar', 3, 'cohort'    , '0', 1]
-      , ['_setCustomVar', 4, 'email'     , '0', 1]
-      );
-      
+      _gaq.push(['_setAccount', 'UA-35125468-1']);
+      _gaq.push(['_setDomainName', 'mupi.me']);
+      _gaq.push(['_trackPageview']);
+
       (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      // DEV
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/u/ga_debug.js';
-      // PROD
-      // ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/u/ga.js';
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
@@ -147,6 +135,7 @@
                     </ul>
                     <p class="center"><strong>Início das aulas em 27/05</strong>, <a href="ementa.html">Clique aqui para saber mais!</a></p>
                   </div>
+
                 </div>
                 <div class="span5 plans">
                   <div class="crowdcrowding row-fluid">
@@ -160,7 +149,7 @@
                       <input type="hidden" name="code" value="1BB5C0776666442BB4174FACAC5FCB61" />
                       <input type="submit" id="btn_pagseguro" value="Assinar" name="submit"/>
                     </form>
-                    <p>Para outras formas de pagamento envie um email para contato@mupi.me</p>
+                    <p>Para outras formas de pagamento ou descontos envie um email para contato@mupi.me</p>
                     <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
                   </div>
                 </div>
@@ -375,33 +364,34 @@
         </div>
       </div>
     </div>
-    <footer role="contentinfo">
-      <div class="container-fluid">
-        <div class="row-fluid">
-          <div class="span8 offset2 social">
-            <ul class="social inline">
-              <li>
-                <a class="fb" href="http://www.facebook.com/mupi.br"
-                target="_blank" title="facebook"></a>
-              </li>
+  </div>
+  <footer role="contentinfo">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span8 offset2 social">
+          <ul class="social inline">
+            <li>
+              <a class="fb" href="http://www.facebook.com/mupi.br"
+              target="_blank" title="facebook"></a>
+            </li>
 
-              <li>
-                <a class="ln" href=
-                "http://www.linkedin.com/company/mupi" target="_blank"
-                title="linkedin"></a>
-              </li>
+            <li>
+              <a class="ln" href=
+              "http://www.linkedin.com/company/mupi" target="_blank"
+              title="linkedin"></a>
+            </li>
 
-              <li>
-                <a class="tw" href="https://twitter.com/mbideas"
-                target="_blank" title="twitter"></a>
-              </li>
-            </ul>
-          </div>
-          <div class="span2 mixpan visible-desktop">
-            <a href="https://mixpanel.com/f/partner"><img alt="Mobile Analytics" src="http://cdn.mxpnl.com/site_media/images/partner/badge_light.png"></a>
-          </div>
+            <li>
+              <a class="tw" href="https://twitter.com/mbideas"
+              target="_blank" title="twitter"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="span2 mixpan visible-desktop">
+          <a href="https://mixpanel.com/f/partner"><img alt="Mobile Analytics" src="http://cdn.mxpnl.com/site_media/images/partner/badge_light.png"></a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
   </body>
 </html>
